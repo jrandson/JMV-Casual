@@ -79,7 +79,7 @@
                                             $venda = (isset(Yii::app()->session['venda'])) ? Yii::app()->session['venda'] : array();
                                             $total = 0;
                                             
-                                            foreach ($venda['itens'] as $itemVenda) {
+                                            foreach ($venda['itensVenda'] as $itemVenda) {
                                                 $total += $itemVenda['quantidade'] * $itemVenda['preco'];
                                             }
                                             ?>
@@ -108,7 +108,7 @@
                                 <tbody>                             
                                     <?php
                                     
-                                    foreach ($venda['itens'] as $itemVenda) {
+                                    foreach ($venda['itensVenda'] as $itemVenda) {
                                         $subtotal = $itemVenda['quantidade'] * $itemVenda['preco'];
                                         ?>
                                         <tr>

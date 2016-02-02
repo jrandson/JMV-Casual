@@ -21,7 +21,7 @@ class UserIdentity extends CUserIdentity {
     public function authenticate() {      
         
         $credentials = new CDbCriteria;
-        $credentials->condition = 'login = "' . $this->username . '"';
+        $credentials->condition = 'email = "' . $this->username . '"';
                 
         // A senha que virá do banco está ciptografada
         $user = Usuario::model()->find($credentials);

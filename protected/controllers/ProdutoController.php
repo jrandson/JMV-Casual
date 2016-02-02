@@ -129,10 +129,16 @@ class ProdutoController extends Controller {
      * Lists all models.
      */
     public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('Produto');
-        $this->render('index', array(
-            'dataProvider' => $dataProvider,
-        ));
+
+        $model = new Produto();
+        $produtos = $model->getAll();
+
+        $data = array(
+            'produtos'=>$produtos,
+        );
+
+        $this->render('index',$data);
+
     }
 
     /**

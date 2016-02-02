@@ -120,4 +120,10 @@ class Produto extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getAll(){
+
+		$query = $this->findAll('',array());
+		return $query;
+	}
 }

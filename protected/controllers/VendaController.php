@@ -45,6 +45,11 @@ class VendaController extends Controller {
     }
 
     public function actionView($id) {
+        $venda = $this->loadModel($id);
+        $this->viewData($venda);
+
+        return;
+
         $this->render('view', array(
             'model' => $this->loadModel($id),
         ));
@@ -96,7 +101,7 @@ class VendaController extends Controller {
 
         if (!isset(Yii::app()->session['venda'])) {
             Yii::app()->session['venda'] = array(
-                'itens' => array(),
+                'itensVenda' => array(),
             );
         }
 
@@ -187,7 +192,7 @@ class VendaController extends Controller {
             if (isset($_POST['itemVenda'])) {
                 $itemVenda = $_POST['itemVenda'];
                 unset($_POST['itemVenda']);
-                $venda['itens'][] = $itemVenda;
+                $venda['itensVenda'][] = $itemVenda;
                 Yii::app()->session['venda'] = $venda;
             }
         }
@@ -196,6 +201,7 @@ class VendaController extends Controller {
     }
 
     public function actionFinalizaVenda() {
+
 
         $dataPayment = $_POST['dataPayment'];
 
@@ -212,10 +218,10 @@ class VendaController extends Controller {
 
             $dataVenda = (isset(Yii::app()->session['venda'])) ? Yii::app()->session['venda'] : array();
 
-            $idVenda = $this->registrarVenda($dataVenda);
+            $idVenda = $this->registrarVenda($dataVenda['itensVenda']);
 
             if ($idVenda) {
-                $this->redirect(array('view', 'id' => $model->idVenda));
+                $this->redirect(array('view', 'id' => $idVenda));
             } else {
                 $this->redirect(array('venda/index'));
             }
@@ -223,7 +229,7 @@ class VendaController extends Controller {
     }
 
     private function registrarVenda($dataVenda) {
-       
+
         $model = new Venda();
         $transaction = $model->dbConnection->beginTransaction();
         try {
@@ -273,15 +279,15 @@ class VendaController extends Controller {
     private function registrarPagamento($idVenda, $valor) {
 
         $model = new Pagamento();
-        $model->id_venda = $paymentData['id_venda'];
-        $model->valor = $paymentData['valor'];
+        $model->id_venda = $idVenda;
+        $model->valor = $valor;
 
         $model->save();
     }
 
     public function actionTeste() {
         unset(Yii::app()->session['venda']);
-        $this->viewData(Yii::app()->session['venda']['itens']);
+        $this->viewData(Yii::app()->session['venda']);
     }
 
     public function actionAddConta() {
@@ -293,7 +299,7 @@ class VendaController extends Controller {
             $dataVenda = (isset(Yii::app()->session['venda'])) ? Yii::app()->session['venda'] : array();
             $this->viewData(Yii::app()->session['venda']);  
             return;
-            $idVenda = $this->registrarVenda($dataVenda['itens']);
+            $idVenda = $this->registrarVenda($dataVenda['itensVenda']);
             
             if ($idVenda) {
                 $this->criarConta($idVenda,$conta['idCliente'],$conta['pagamento']);
