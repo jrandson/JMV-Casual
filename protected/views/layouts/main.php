@@ -9,7 +9,7 @@
         $user = Usuario::model()->findByPk(Yii::app()->user->id);
 
         if(!isset($user)){
-
+            $this->redirect(array('site/login'));
         }
 
     ?>
@@ -98,13 +98,11 @@
                 <div class="container body">
                     <div class="main_container">
 
-
-
                         <!-- page content -->
                         <div class="center_col" role="main">
 
+                            <?php echo $content; ?>
 
-                            <?php echo $content; ?>           
                         </div>
                         <!-- /page content -->
                     </div>
