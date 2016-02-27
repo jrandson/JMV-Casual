@@ -56,24 +56,18 @@
                                             <th>Telefone</th>
                                             <th>E-mail</th>
                                             <th>Endereço</th>
-                                            <th>RG</th>
-                                            <th>CPF</th>
-                                            <th>Data de cadastro</th>
-                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php foreach ($clientes as $cliente) { ?>
-                                    <th scope="row"><?php echo $cliente->idCliente ?></td>
-                                        <td><?php echo $cliente->nome ?></td>
-                                        <td><?php echo $cliente->telefone ?></td>
-                                        <td><?php echo $cliente->email ?></td>
-                                        <td><?php echo $cliente->endereco ?></td>
-                                        <td><?php echo $cliente->rg ?></td>
-                                        <td><?php echo $cliente->cpf ?></td>
-                                        <td><?php echo $cliente->data_cadastro ?></td>
-                                        <td><a href="view/<?php echo $cliente->idCliente ?>">Visializar</a></td>
-                                    <?php } ?>
+                                            <tr scope="row"><?php echo $cliente->idCliente ?></td>
+                                                <td><?php echo $cliente->nome ?></td>
+                                                <td><?php echo $cliente->telefone ?></td>
+                                                <td><?php echo $cliente->email ?></td>
+                                                <td><?php echo $cliente->endereco ?></td>
+                                                <td><a href="view/<?php echo $cliente->idCliente ?>">Visializar</a></td>
+                                            </tr>
+                                            <?php } ?>
                                     
                                     </tbody>
                                 </table>

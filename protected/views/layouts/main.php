@@ -5,19 +5,33 @@
         <?php require 'style.php'; ?>
     </head>
 
+    <?php
+        $user = Usuario::model()->findByPk(Yii::app()->user->id);
+
+        if(!isset($user)){
+
+        }
+
+    ?>
 
     <body class="nav-md">
         <div class="container body">
 
+
+
             <div class="main_container">
+
+
 
                 <div class="col-md-3 left_col">
                     <div class="left_col scroll-view">
 
                         <div class="navbar nav_title" style="border: 0;">
-                            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+                            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Loja </span></a>
                         </div>
                         <div class="clearfix"></div>
+
+
 
                         <!-- menu prile quick info -->
                         <div class="profile">
@@ -25,8 +39,8 @@
                                 <img src="images/img.jpg" alt="..." class="img-circle profile_img">
                             </div>
                             <div class="profile_info">
-                                <span>Welcome,</span>
-                                <h2><?php echo Yii::app()->user->name ?></h2>
+                                <span>Bem vindo,</span>
+                                <h2><?php echo $user->nome ?></h2>
                             </div>
                         </div>
                         <!-- /menu prile quick info -->
@@ -44,14 +58,52 @@
                 </div>
 
                 <!-- top navigation -->
-                <?php //require 'navigation.php'; ?>
+                <?php require 'navigation.php'; ?>
                 <!-- /top navigation -->
+
+                <!-- notifications -->
+                <div class="top_nav">
+                    <div class="col-md-12">
+                        <?php if(Yii::app()->user->hasFlash('success')):?>
+                            <div class="alert alert-success alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <strong><?php echo Yii::app()->user->getFlash('success'); ?></strong>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if(Yii::app()->user->hasFlash('notice')):?>
+                            <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <strong><?php echo Yii::app()->user->getFlash('warning'); ?></strong>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if(Yii::app()->user->hasFlash('error')):?>
+                            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <strong><?php echo Yii::app()->user->getFlash('error'); ?></strong>
+                            </div>
+                        <?php endif; ?>
+
+
+                    </div>
+                </div>
+                <!-- /notifications -->
+
 
                 <!-- page content -->                
                 <div class="container body">
                     <div class="main_container">
+
+
+
                         <!-- page content -->
                         <div class="center_col" role="main">
+
+
                             <?php echo $content; ?>           
                         </div>
                         <!-- /page content -->

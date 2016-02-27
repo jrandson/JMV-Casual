@@ -1,54 +1,79 @@
 
 <div class="right_col" role="main">
     <div class="">
-
         <div class="page-title">
             <div class="title_left">
                 <h3>Plain Page</h3>
             </div>
-
-            <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Go!</button>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
         </div>
+        <?php
+
+        ?>
+
+
         <div class="clearfix"></div>
+
 
         <div class="row">
 
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel" style="height:600px;">
 
-
+                    <!-- Informações da venda!-->
                     <div class="x_content">
+                        <div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>#Cod</th>
+                                        <th>Item</th>
+                                        <th>Qtd</th>
+                                        <th>Preço</th>
+                                        <th>Total</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php
 
-                       
+                                    $total = 0;
+                                    $itensVenda = $dataVenda['itensVenda'];
 
+                                    foreach ( $itensVenda as $item){
+                                        $total += $item['subtotal'];
+                                        ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $item['idProduto'];?> </th>
+                                            <td> <?php echo substr($item['descricao'],0,100).' ...';?> </td>
+                                            <td> <?php echo $item['quantidade'];?> </td>
+                                            <td> <?php echo 'R$ '.number_format($item['preco'],2,',','.');?> </td>
+                                            <td> <?php echo 'R$ '.number_format($item['subtotal'],2,',','.');?> </td>
+                                        </tr>
+                                    <?php   } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <h2>Total: <?php echo $total;?></h2>
                         <?php
                         if (!empty($cliente)){
-                        //echo 'Cliente não encontrado. Deseja '.'<a href="cliente/create">cadasatrar</a>'.'um novo?';
-                            $this->viewData($cliente);
-                            $this->viewData($debitos);
+                        echo 'Cliente não encontrado. Deseja '.'<a href="cliente/create">cadasatrar</a>'.'um novo?';
+
                         }
                         else {
                             ?>
-                            <h1>Adiciona conta do usuário aqui</h1>
-                            <form method="post" action="getCliente">                                
-                                <input name="telefone" type="tel" placeholder="Telefone">
+                            <h4>Busque um cliente pelo numero de telefone aqui</h4>
+                            <form method="post" action="getCliente" id="searchCliente">
+                                <input name="telefone" id="telefone" type="tel" placeholder="Telefone" onblur="getCliente();">
                             </form>
                             <?php
                         }
-
-                        //$this->viewData(Yii::app()->session['venda']);
+;
                         ?>
+                        <div id="result">
 
+                        </div>
 
                     </div>
                     <?php if (isset($cliente)) { ?>
@@ -66,10 +91,10 @@
 </div>
 
 <script>
-    function getProduto() {
+    function getCliente() {
 
         var urlAction = "getCliente";
-        var id = $("#telefone").val();
+        //var id = $("#telefone").val();
 
         /**
          * Envia o formulário por meio da variável questao_data
@@ -83,10 +108,9 @@
         }).done(function (result) {
 
 
-            var returnedData = JSON.parse(result);
+            //var returnedData = JSON.parse(result);
 
-            $("#descricao").val(returnedData.descricao);
-            $("#preco").val(Math.round(returnedData.preco, 2));
+            $("#result").html(result);
 
         });
     }

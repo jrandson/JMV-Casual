@@ -123,7 +123,7 @@ class Produto extends CActiveRecord
 
 	public function getAll(){
 
-		$query = $this->findAll('',array());
+		$query = $this->findAll();
 		return $query;
 	}
 }

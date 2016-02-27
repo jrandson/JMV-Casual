@@ -32,11 +32,11 @@ class Conta extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_venda, id_usuario', 'required'),
-			array('id_venda, id_cliente, id_usuario, quitada', 'numerical', 'integerOnly'=>true),
+			array('id_venda, id_cliente', 'required'),
+			array('id_venda, id_cliente, quitada', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idConta, id_venda, id_cliente, id_usuario, quitada', 'safe', 'on'=>'search'),
+			array('idConta, id_venda, id_cliente, id_cliente, quitada', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,8 +62,7 @@ class Conta extends CActiveRecord
 			'idConta' => 'Id Conta',
 			'id_venda' => 'Id Venda',
 			'id_cliente' => 'Id Cliente',
-			'id_usuario' => 'Id Usuario',
-			'quitada' => 'Quitada',
+
 		);
 	}
 
@@ -88,7 +87,6 @@ class Conta extends CActiveRecord
 		$criteria->compare('idConta',$this->idConta);
 		$criteria->compare('id_venda',$this->id_venda);
 		$criteria->compare('id_cliente',$this->id_cliente);
-		$criteria->compare('id_usuario',$this->id_usuario);
 		$criteria->compare('quitada',$this->quitada);
 
 		return new CActiveDataProvider($this, array(

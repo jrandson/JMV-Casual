@@ -105,4 +105,16 @@ class Venda extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getItensVenda($idVenda){
+		$sql = "Select p.descricao,p.precoVenda, iv.quantidade, (p.precoVenda * iv.quantidade) as subtotal
+				from item_venda iv
+				inner join produto p on iv.id_produto = p.idProduto
+ 				inner join venda v on iv.id_venda = v.idVenda
+ 				where id_venda = $idVenda";
+
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query;
+	}
 }

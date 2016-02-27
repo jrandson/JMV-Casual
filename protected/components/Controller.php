@@ -25,4 +25,15 @@ class Controller extends CController
 		$query = Yii::app()->db->createCommand($sql)->queryAll();
 		return $query;
 	}
+
+	/**
+	 * @param $type
+	 * @param $message
+	 *
+	 * type can be error, success or warning
+	 */
+	public function setFlashMessage($type, $message) {
+		Yii::app()->user->setFlash($type, $message);
+	}
+
 }

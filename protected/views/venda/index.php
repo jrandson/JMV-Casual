@@ -164,7 +164,7 @@
 
     function getProduto() {
         
-        var urlAction = "searchById";
+        var urlAction = "searchByCod";
         var id = $("#idProduto").val();
 
         /**

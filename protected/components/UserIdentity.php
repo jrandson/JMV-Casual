@@ -18,6 +18,7 @@ class UserIdentity extends CUserIdentity {
      */
     
     private $_id;
+
     public function authenticate() {      
         
         $credentials = new CDbCriteria;
@@ -35,6 +36,7 @@ class UserIdentity extends CUserIdentity {
             $this->errorCode = self::ERROR_PASSWORD_INVALID;
         else {
             $this->id = $user->idUsuario;
+
             $this->errorCode = self::ERROR_NONE;
 
             if ($user->isAdmin == 1)

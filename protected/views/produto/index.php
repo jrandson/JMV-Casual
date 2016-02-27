@@ -34,7 +34,7 @@
                             <thead>
                                 <tr class="headings">
                                     <th>Cod</th>
-                                    <th>Produto</th>
+                                    <th>Descrição</th>
                                     <th>Preço </th>
                                     <th>Localização</th>
                                     <th>Estoque</th>
@@ -47,7 +47,7 @@
                                 ?>
                                 <tr class="even pointer">
                                     <td class=" last"><a href="view/<?php echo $produto->idProduto; ?>"><?php echo $produto->codigo; ?></a></td>
-                                    <td class=" "><?php echo $produto->produto; ?></td>
+                                    <td class=" "><?php echo $produto->descricao; ?></td>
                                     <td class=" ">R$ <?php echo number_format($produto->precoVenda,2,',','.'); ?></td>
                                     <td class=" "><?php echo $produto->localizacao; ?></td>
                                     <td class="a-right a-right "><?php echo $produto->estoque; ?></td>

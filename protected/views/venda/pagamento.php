@@ -1,163 +1,60 @@
+<h3>Pagamento de conta</h3>
 
-<div class="right_col" role="main">
-    <div class="">
+    <!-- start accordion -->
+    <div class="accordion" id="accordion1" role="tablist" aria-multiselectable="true">
+        <div class="panel">
+            <a class="panel-heading" role="tab" id="headingOne1" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                <h4 class="panel-title">Collapsible Group Item #1</h4>
+            </a>
 
-        <div class="page-title">
-            <div class="title_left">
-                <h3>Plain Page</h3>
-            </div>
 
-            <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Go!</button>
-                        </span>
-                    </div>
-                </div>
-            </div>
 
         </div>
-        <div class="clearfix"></div>
-
-        <div class="row">
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel" style="height:600px;">
-
-
-                    <div class="x_content">
-
-                        <div class="row">
-
-                            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-12" class="form-control">
-                            </div>
-
-                            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-6" class="form-control">
-                            </div>
-
-                            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-6" class="form-control">
-                            </div>
-
-
-                            <div class="col-md-4 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-4" class="form-control">
-                            </div>
-
-                            <div class="col-md-4 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-4" class="form-control">
-                            </div>
-
-                            <div class="col-md-4 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-4" class="form-control">
-                            </div>
-
-
-                            <div class="col-md-3 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-3" class="form-control">
-                            </div>
-
-                            <div class="col-md-3 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-3" class="form-control">
-                            </div>
-
-                            <div class="col-md-3 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-3" class="form-control">
-                            </div>
-
-                            <div class="col-md-3 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-3" class="form-control">
-                            </div>
-
-
-                            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-2" class="form-control">
-                            </div>
-
-                            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-2" class="form-control">
-                            </div>
-
-                            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-2" class="form-control">
-                            </div>
-
-                            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-2" class="form-control">
-                            </div>
-
-                            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-2" class="form-control">
-                            </div>
-
-                            <div class="col-md-2 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-2" class="form-control">
-                            </div>
-
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-
-                            <div class="col-md-1 col-sm-12 col-xs-12 form-group">
-                                <input type="text" placeholder=".col-md-1" class="form-control">
-                            </div>
-                        </div>
-
-                    </div>
-
-
+        <div class="panel">
+            <a class="panel-heading collapsed" role="tab" id="headingTwo1" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo">
+                <h4 class="panel-title">Alguma coisa relevante da venda aqui</h4>
+            </a>
+            <div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <p><strong>Collapsible Item 2 data</strong>
+                    </p>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <a class="panel-heading collapsed" role="tab" id="headingThree1" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree">
+                <h4 class="panel-title">Collapsible Group Item #3</h4>
+            </a>
+            <div id="collapseThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <p><strong>Collapsible Item 3 data</strong>
+                    </p>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor
                 </div>
             </div>
         </div>
     </div>
+    <!-- end of accordion -->
+
+<?php
 
 
-</div>
+    if($cliente == null){
+        $data = array(
+            'venda'=>$venda,
+        );
 
+        $this->renderPartial('_novoClientePagamento',$data);
+    }
+    else{
+        $this->viewData($cliente);
+        $this->viewData($venda);
+    ?>
+        <form action="finalizarVendaAPrazo" method="post">
+            <input type="text" name="venda[pagamento]" placeholder="Valor" />
+            <input type="hidden" name="cliente[idCliente]" value="<?php echo $cliente->idCliente ?>">
+            <input type="submit" value="Registrar venda">
+        </form>
 
-
+    <?php } ?>

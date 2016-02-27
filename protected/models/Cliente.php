@@ -117,31 +117,36 @@ class Cliente extends CActiveRecord
 		return parent::model($className);
 	}
         
-        public function buscaCliente($telefone){
-            
-            $query = $this->getQuery("select * from cliente where telefone = $telefone");
-            $model = $this->find('telefone = :telefone',array(':telefone'=>$telefone));
-            return $model;
-        }
-        
-        private function getQuery($sql){
-            $query = Yii::app()->db->createCommand($sql)->queryAll();
-            
-            return $query;
-        }
-        
-        public function getDebitos($idCliente = 0){
-            if($idCliente == 0)
-                $idCliente = $this->idCliente;
-            
-            $sql = "select v.* from conta co "
-                    . "inner join venda v on co.id_venda = v.idVenda "
-                    . "inner join cliente cl on co.id_cliente = cl.idCliente "
-                    . "where cl.idCliente = $idCliente group by co.idConta";
-            
-            $query = $this->getQuery($sql);
-            
-            return $query;
-            
+	public function buscaCliente($telefone){
+
+		$model = $this->find('telefone = :telefone',array(':telefone'=>$telefone));
+
+		return $model;
+	}
+
+	private function getQuery($sql){
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query;
+	}
+
+	public function getDebitos($idCliente = 0){
+		if($idCliente == 0)
+			$idCliente = $this->idCliente;
+
+		if($idCliente == null){
+			return array();
+		}
+
+		$sql = "select * from item_venda iv
+				inner join venda v on iv.id_venda = v.idVenda
+				inner join conta co on co.id_venda = v.idVenda
+				inner join cliente c on co.id_cliente = c.idCliente
+				where c.idCliente = $idCliente";
+
+		$query = $this->getQuery($sql);
+
+		return $query;
+
         }
 }
