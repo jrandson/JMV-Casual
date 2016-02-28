@@ -26,7 +26,9 @@
                 <div class="x_panel" style="height:600px;">
                     
                     
-                    sdlknsj
+                    <?php
+                        $this->viewData($model);
+                    ?>
                     
                     
                 </div>

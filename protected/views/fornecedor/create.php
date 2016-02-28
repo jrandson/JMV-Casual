@@ -35,49 +35,45 @@
                             <form method="post" action="create" class="form-horizontal form-label-left" >
 
                                 <div class="item form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Razao <span class="required">*</span>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Razão <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="name"  class="form-control col-md-7 col-xs-12" name="Fornecedor[]" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="" required="required" type="text">
-                                    </div>
-                                </div>
-                                <div class="item form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">E-mail <span class="required"></span>
-                                    </label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="email" id="email" name="Fornecedor[]" name="Usuario[email]"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                
-                                <div class="item form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Telefone <span class="required"></span>
-                                    </label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="tel" id="email" name="Fornecedor[]"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                
-                                <div class="item form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Login<span class="required">*</span>
-                                    </label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="email" name="Fornecedor[]"   class="form-control col-md-7 col-xs-12">
+                                        <input id="name"  class="form-control col-md-7 col-xs-12" name="Fornecedor[razao]" data-validate-length-range="20" data-validate-words="2" name="name" placeholder="" required="required" type="text">
                                     </div>
                                 </div>
 
                                 <div class="item form-group">
-                                    <label for="password" class="control-label col-md-3">Senha*</label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Responsável<span class="required">*</span>
+                                    </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="password" type="password" name=Fornecedor[]"  class="form-control col-md-7 col-xs-12" required="required">
+                                        <input type="text" id="email" name="Fornecedor[responsável]" required="required"   class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
+
                                 <div class="item form-group">
-                                    <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">Confirme a senha*</label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">E-mail <span class="required"></span>
+                                    </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="password2" type="password" name="Fornecedor[]" data-validate-linked="password" class="form-control col-md-7 col-xs-12" required="required">
+                                        <input type="email" id="email" name="Fornecedor[email]"   class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
                                 
+                                <div class="item form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" >Telefone <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="tel" id="telefone" name="Fornecedor[telefone]" required="required"  class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                </div>
+                                
+                                <div class="item form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" >Endereço<span class="required"></span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="email" name="Fornecedor[endereco]"  class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-9">Observacao</label>
                                     <div class="col-md-6 col-sm-6 col-xs-6">

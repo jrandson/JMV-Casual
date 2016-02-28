@@ -1,5 +1,8 @@
 <div class="top_nav">
 
+    <?php
+        $user = Usuario::model()->findByPk(Yii::app()->user->id);
+    ?>
     <div class="nav_menu">
         <nav class="" role="navigation">
             <div class="nav toggle">
@@ -9,14 +12,14 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="">
                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        <img src="images/img.jpg" alt="">John Doe
+                        <img src="images/img.jpg" alt=""><?php echo $user->nome; ?>
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
-                        <li><a href="javascript:;">  Profile</a>
+                        <li><a href="javascript:;">  Meu perfil</a>
                         </li>
                         <li>
-                            <a href="javascript:;">
+                            <a href="#">
                                 <span class="badge bg-red pull-right">50%</span>
                                 <span>Settings</span>
                             </a>

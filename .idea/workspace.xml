@@ -2,30 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5bd2bc-a8b1-4aab-80f6-cd55e34d6a0f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/views/_form.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/views/_form_.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/views/create.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/views/usuario.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gentelella/general_elements.html" afterPath="$PROJECT_DIR$/gentelella/general_elements.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Controller.php" afterPath="$PROJECT_DIR$/protected/components/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/UserIdentity.php" afterPath="$PROJECT_DIR$/protected/components/UserIdentity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/VendaController.php" afterPath="$PROJECT_DIR$/protected/controllers/VendaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Cliente.php" afterPath="$PROJECT_DIR$/protected/models/Cliente.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Conta.php" afterPath="$PROJECT_DIR$/protected/models/Conta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Produto.php" afterPath="$PROJECT_DIR$/protected/models/Produto.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Venda.php" afterPath="$PROJECT_DIR$/protected/models/Venda.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/fornecedor/modelo_tables.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/plain_page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/usuario/model_view.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/views/layouts/main_.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/FornecedorController.php" afterPath="$PROJECT_DIR$/protected/controllers/FornecedorController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ProdutoController.php" afterPath="$PROJECT_DIR$/protected/controllers/ProdutoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/UsuarioController.php" afterPath="$PROJECT_DIR$/protected/controllers/UsuarioController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Fornecedor.php" afterPath="$PROJECT_DIR$/protected/models/Fornecedor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Usuario.php" afterPath="$PROJECT_DIR$/protected/models/Usuario.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/cliente/index.php" afterPath="$PROJECT_DIR$/protected/views/cliente/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/footerbuttons.php" afterPath="$PROJECT_DIR$/protected/views/layouts/footerbuttons.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.1" afterPath="$PROJECT_DIR$/protected/runtime/application.log.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/fornecedor/create.php" afterPath="$PROJECT_DIR$/protected/views/fornecedor/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/fornecedor/index.php" afterPath="$PROJECT_DIR$/protected/views/fornecedor/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/fornecedor/update.php" afterPath="$PROJECT_DIR$/protected/views/fornecedor/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/fornecedor/view.php" afterPath="$PROJECT_DIR$/protected/views/fornecedor/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/navigation.php" afterPath="$PROJECT_DIR$/protected/views/layouts/navigation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/scripts.php" afterPath="$PROJECT_DIR$/protected/views/layouts/scripts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/produto/index.php" afterPath="$PROJECT_DIR$/protected/views/produto/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/venda/addConta.php" afterPath="$PROJECT_DIR$/protected/views/venda/addConta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/venda/index.php" afterPath="$PROJECT_DIR$/protected/views/venda/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/venda/pagamento.php" afterPath="$PROJECT_DIR$/protected/views/venda/pagamento.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/venda/view.php" afterPath="$PROJECT_DIR$/protected/views/venda/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/usuario/create.php" afterPath="$PROJECT_DIR$/protected/views/usuario/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/usuario/index.php" afterPath="$PROJECT_DIR$/protected/views/usuario/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/usuario/update.php" afterPath="$PROJECT_DIR$/protected/views/usuario/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/usuario/view.php" afterPath="$PROJECT_DIR$/protected/views/usuario/view.php" />
     </list>
     <ignored path="loja.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,114 +53,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VendaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
+      <file leaf-file-name="FornecedorController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/FornecedorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="334" column="48" selection-start-line="334" selection-start-column="48" selection-end-line="334" selection-end-column="48" />
+            <state vertical-scroll-proportion="-2.3461537">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
-                <element signature="n#actionView#0;n#VendaController#0;n#!!top" expanded="false" />
-                <element signature="n#actionCreate#0;n#VendaController#0;n#!!top" expanded="false" />
-                <element signature="n#actionUpdate#0;n#VendaController#0;n#!!top" expanded="false" />
-                <element signature="n#actionIndex#0;n#VendaController#0;n#!!top" expanded="false" />
-                <element signature="n#actionAdmin#0;n#VendaController#0;n#!!top" expanded="false" />
-                <element signature="n#loadModel#0;n#VendaController#0;n#!!top" expanded="false" />
-                <element signature="n#performAjaxValidation#0;n#VendaController#0;n#!!top" expanded="false" />
-                <marker date="1456425479395" expanded="true" signature="5025:5096" placeholder="select * fro... produto" />
+                <element signature="n#actionCreate#0;n#FornecedorController#0;n#!!top" expanded="false" />
+                <element signature="n#actionUpdate#0;n#FornecedorController#0;n#!!top" expanded="false" />
+                <element signature="n#actionDelete#0;n#FornecedorController#0;n#!!top" expanded="false" />
+                <element signature="n#actionAdmin#0;n#FornecedorController#0;n#!!top" expanded="false" />
+                <element signature="n#loadModel#0;n#FornecedorController#0;n#!!top" expanded="false" />
+                <element signature="n#performAjaxValidation#0;n#FornecedorController#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/layouts/sidebar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.0">
-              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.026501767">
-              <caret line="29" column="101" selection-start-line="29" selection-start-column="100" selection-end-line="29" selection-end-column="101" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClienteController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/ClienteController.php">
+      <file leaf-file-name="footerbuttons.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/footerbuttons.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="121" column="35" selection-start-line="121" selection-start-column="35" selection-end-line="122" selection-end-column="59" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.625">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/usuario/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/cliente/index.php">
+        <entry file="file://$PROJECT_DIR$/protected/views/usuario/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+            <state vertical-scroll-proportion="-58.25">
+              <caret line="103" column="144" selection-start-line="103" selection-start-column="144" selection-end-line="103" selection-end-column="144" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="general_elements.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gentelella/general_elements.html">
+      <file leaf-file-name="plain_page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/plain_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1318" column="44" selection-start-line="1318" selection-start-column="44" selection-end-line="1318" selection-end-column="89" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#10;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#10;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#9;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#10;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#11;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1456424130823" expanded="true" signature="109204:109216" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/layouts/scripts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/layouts/navigation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0">
-              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -170,19 +133,64 @@
       <file leaf-file-name="UsuarioController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/UsuarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.423077">
+              <caret line="190" column="44" selection-start-line="190" selection-start-column="44" selection-end-line="190" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/navigation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4520548">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding>
-                <element signature="n#accessRules#0;n#UsuarioController#0;n#!!top" expanded="false" />
-                <element signature="n#actionView#0;n#UsuarioController#0;n#!!top" expanded="false" />
-                <element signature="n#actionCreate#0;n#UsuarioController#0;n#!!top" expanded="false" />
-                <element signature="n#checarLogin#0;n#UsuarioController#0;n#!!top" expanded="false" />
-                <element signature="n#actionUpdate#0;n#UsuarioController#0;n#!!top" expanded="false" />
-                <element signature="n#actionDelete#0;n#UsuarioController#0;n#!!top" expanded="false" />
-                <element signature="n#actionIndex#0;n#UsuarioController#0;n#!!top" expanded="false" />
-                <element signature="n#actionAdmin#0;n#UsuarioController#0;n#!!top" expanded="false" />
-                <element signature="n#loadModel#0;n#UsuarioController#0;n#!!top" expanded="false" />
-                <element signature="n#performAjaxValidation#0;n#UsuarioController#0;n#!!top" expanded="false" />
+                <marker date="1456620508723" expanded="true" signature="1169:1206" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="1169:1259" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="1547:5265" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="1672:1816" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="1929:5243" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="1958:2656" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="1990:2626" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="2043:2168" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="2207:2380" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="2435:2593" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="2685:3383" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="2717:3353" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="2770:2895" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="2934:3107" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="3162:3320" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="3412:4110" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="3444:4080" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="3497:3622" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="3661:3834" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="3889:4047" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="4139:4837" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="4171:4807" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="4224:4349" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="4388:4561" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="4616:4774" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="4866:5217" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="4920:5187" placeholder="..." />
+                <marker date="1456620508723" expanded="true" signature="4956:5152" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Usuario.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/Usuario.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.625">
+              <caret line="130" column="20" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
+              <folding>
+                <element signature="n#rules#0;n#Usuario#0;n#!!top" expanded="false" />
+                <element signature="n#relations#0;n#Usuario#0;n#!!top" expanded="false" />
+                <element signature="n#attributeLabels#0;n#Usuario#0;n#!!top" expanded="false" />
+                <marker date="1456618506035" expanded="true" signature="4207:4228" placeholder="select * fro... usuario" />
+                <marker date="1456618506035" expanded="true" signature="4389:4437" placeholder="select * fro... usuario" />
+                <marker date="1456618506035" expanded="true" signature="4389:4448" placeholder="select * fro... usuario" />
               </folding>
             </state>
           </provider>
@@ -198,7 +206,6 @@
       <list>
         <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/protected/models/LoginForm.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ProdutoController.php" />
         <option value="$PROJECT_DIR$/protected/models/Cliente.php" />
         <option value="$PROJECT_DIR$/protected/views/venda/teste.php" />
         <option value="$PROJECT_DIR$/protected/views/venda/_novoClientePamegamento.php" />
@@ -212,8 +219,6 @@
         <option value="$PROJECT_DIR$/protected/views/venda/pagamento.php" />
         <option value="$PROJECT_DIR$/protected/models/Conta.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/footerbuttons.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/navigation.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
         <option value="$PROJECT_DIR$/gentelella/general_elements.html" />
         <option value="$PROJECT_DIR$/protected/views/layouts/scripts.php" />
@@ -221,7 +226,26 @@
         <option value="$PROJECT_DIR$/protected/components/Controller.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ClienteController.php" />
         <option value="$PROJECT_DIR$/protected/views/cliente/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/error.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/model view.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ProdutoController.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/model_view.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/create.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/update.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/fornecedor/create.php" />
+        <option value="$PROJECT_DIR$/protected/views/fornecedor/update.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/FornecedorController.php" />
+        <option value="$PROJECT_DIR$/protected/views/fornecedor/index.php" />
+        <option value="$PROJECT_DIR$/protected/models/Fornecedor.php" />
+        <option value="$PROJECT_DIR$/protected/views/fornecedor/view.php" />
+        <option value="$PROJECT_DIR$/protected/models/Usuario.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/index.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/navigation.php" />
       </list>
     </option>
   </component>
@@ -340,7 +364,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="usuario" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loja" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,6 +416,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/views" />
+      <recent name="$PROJECT_DIR$/protected/views/fornecedor" />
       <recent name="$PROJECT_DIR$/protected/views/venda" />
     </key>
   </component>
@@ -439,23 +501,23 @@
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20045386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20272315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2917342" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28038898" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1098546" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.035541195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -478,233 +540,18 @@
           <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="73" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-          <folding>
-            <element signature="n#actionView#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCreate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionUpdate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionIndex#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionAdmin#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#performAjaxValidation#0;n#VendaController#0;n#!!top" expanded="false" />
-            <marker date="1456425479395" expanded="true" signature="5025:5096" placeholder="select * fro... produto" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#actionView#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCreate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionUpdate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionIndex#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionAdmin#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#performAjaxValidation#0;n#VendaController#0;n#!!top" expanded="false" />
-            <marker date="1456425479395" expanded="true" signature="5025:5096" placeholder="select * fro... produto" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#actionView#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCreate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionUpdate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionIndex#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionAdmin#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#performAjaxValidation#0;n#VendaController#0;n#!!top" expanded="false" />
-            <marker date="1456425479395" expanded="true" signature="5025:5096" placeholder="select * fro... produto" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#actionView#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCreate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionUpdate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionIndex#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionAdmin#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#performAjaxValidation#0;n#VendaController#0;n#!!top" expanded="false" />
-            <marker date="1456425479395" expanded="true" signature="5025:5096" placeholder="select * fro... produto" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#actionView#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCreate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionUpdate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionIndex#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionAdmin#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#performAjaxValidation#0;n#VendaController#0;n#!!top" expanded="false" />
-            <marker date="1456425479395" expanded="true" signature="5025:5096" placeholder="select * fro... produto" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///etc/php5/cli/conf.d/20-xdebug.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///etc/php5/cli/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39449543">
-          <caret line="1937" column="72" selection-start-line="1937" selection-start-column="71" selection-end-line="1937" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69164264">
-          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68619245">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4665272">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Cliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/cliente/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0563381">
-          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Pagamento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Venda.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.26">
           <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+          <folding>
+            <marker date="1455628203651" expanded="true" signature="3115:3358" placeholder="Select p.des... item_venda" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -726,6 +573,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="125" column="32" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -750,20 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ProdutoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33153638">
-          <caret line="146" column="28" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/venda/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="169" column="11" selection-start-line="169" selection-start-column="11" selection-end-line="169" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/venda/addConta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -771,53 +605,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/venda/_novoClientePagamento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/venda/pagamento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.25">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/footerbuttons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24725275">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75274724">
-          <caret line="111" column="56" selection-start-line="111" selection-start-column="56" selection-end-line="111" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/scripts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#authenticate2#0;n#UserIdentity#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -847,25 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2857143">
           <caret line="87" column="31" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/UsuarioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#accessRules#0;n#UsuarioController#0;n#!!top" expanded="false" />
-            <element signature="n#actionView#0;n#UsuarioController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCreate#0;n#UsuarioController#0;n#!!top" expanded="false" />
-            <element signature="n#checarLogin#0;n#UsuarioController#0;n#!!top" expanded="false" />
-            <element signature="n#actionUpdate#0;n#UsuarioController#0;n#!!top" expanded="false" />
-            <element signature="n#actionDelete#0;n#UsuarioController#0;n#!!top" expanded="false" />
-            <element signature="n#actionIndex#0;n#UsuarioController#0;n#!!top" expanded="false" />
-            <element signature="n#actionAdmin#0;n#UsuarioController#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#UsuarioController#0;n#!!top" expanded="false" />
-            <element signature="n#performAjaxValidation#0;n#UsuarioController#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -874,23 +650,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="334" column="48" selection-start-line="334" selection-start-column="48" selection-end-line="334" selection-end-column="48" />
-          <folding>
-            <element signature="n#actionView#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionCreate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionUpdate#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionIndex#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#actionAdmin#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#loadModel#0;n#VendaController#0;n#!!top" expanded="false" />
-            <element signature="n#performAjaxValidation#0;n#VendaController#0;n#!!top" expanded="false" />
-            <marker date="1456425479395" expanded="true" signature="5025:5096" placeholder="select * fro... produto" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -910,27 +669,367 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/navigation.php">
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.3975265">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/cliente/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29151943">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.875">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="n#actionView#0;n#VendaController#0;n#!!top" expanded="false" />
+            <element signature="n#actionCreate#0;n#VendaController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUpdate#0;n#VendaController#0;n#!!top" expanded="false" />
+            <element signature="n#actionAdmin#0;n#VendaController#0;n#!!top" expanded="false" />
+            <element signature="n#loadModel#0;n#VendaController#0;n#!!top" expanded="false" />
+            <element signature="n#performAjaxValidation#0;n#VendaController#0;n#!!top" expanded="false" />
+            <marker date="1456425479395" expanded="true" signature="5025:5096" placeholder="select * fro... produto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gentelella/tables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34816754">
+          <caret line="466" column="24" selection-start-line="466" selection-start-column="24" selection-end-line="521" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#3;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80243903">
+          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.98536587">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="n#actionContact#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#actionLogin#0;n#SiteController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/venda/pagamento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5609756">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/venda/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.86585367">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/venda/_novoClientePagamento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5731707">
+          <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/venda/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5731707">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/venda/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.40243903">
+          <caret line="169" column="11" selection-start-line="169" selection-start-column="11" selection-end-line="169" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gentelella/form_validation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8653846">
+          <caret line="414" column="40" selection-start-line="414" selection-start-column="40" selection-end-line="419" selection-end-column="46" />
+          <folding>
+            <element signature="n#script#7;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ProdutoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="23.041666">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding>
+            <element signature="n#accessRules#0;n#ProdutoController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/model_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0833333">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/modelo_tables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.610687">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3740458">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.98092645">
+          <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9182561">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="11.25">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Fornecedor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.24">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <marker date="1456604269240" expanded="true" signature="3640:3704" placeholder="select * fro... fornecedor" />
+            <marker date="1456604269240" expanded="true" signature="3844:3896" placeholder="select * fro... fornecedor" />
+            <marker date="1456604269240" expanded="true" signature="3844:3907" placeholder="select * fro... fornecedor" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/plain_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.625">
+          <caret line="130" column="20" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
+          <folding>
+            <element signature="n#rules#0;n#Usuario#0;n#!!top" expanded="false" />
+            <element signature="n#relations#0;n#Usuario#0;n#!!top" expanded="false" />
+            <element signature="n#attributeLabels#0;n#Usuario#0;n#!!top" expanded="false" />
+            <marker date="1456618506035" expanded="true" signature="4207:4228" placeholder="select * fro... usuario" />
+            <marker date="1456618506035" expanded="true" signature="4389:4437" placeholder="select * fro... usuario" />
+            <marker date="1456618506035" expanded="true" signature="4389:4448" placeholder="select * fro... usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.423077">
+          <caret line="190" column="44" selection-start-line="190" selection-start-column="44" selection-end-line="190" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-58.25">
+          <caret line="103" column="144" selection-start-line="103" selection-start-column="144" selection-end-line="103" selection-end-column="144" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.0">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+        <state vertical-scroll-proportion="-1.4122137">
+          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/FornecedorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3461537">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="n#actionCreate#0;n#FornecedorController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUpdate#0;n#FornecedorController#0;n#!!top" expanded="false" />
+            <element signature="n#actionDelete#0;n#FornecedorController#0;n#!!top" expanded="false" />
+            <element signature="n#actionAdmin#0;n#FornecedorController#0;n#!!top" expanded="false" />
+            <element signature="n#loadModel#0;n#FornecedorController#0;n#!!top" expanded="false" />
+            <element signature="n#performAjaxValidation#0;n#FornecedorController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.625">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/footerbuttons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.026501767">
-          <caret line="29" column="101" selection-start-line="29" selection-start-column="100" selection-end-line="29" selection-end-column="101" />
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4520548">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding>
+            <marker date="1456620508723" expanded="true" signature="1169:1206" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="1169:1259" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="1547:5265" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="1672:1816" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="1929:5243" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="1958:2656" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="1990:2626" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="2043:2168" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="2207:2380" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="2435:2593" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="2685:3383" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="2717:3353" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="2770:2895" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="2934:3107" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="3162:3320" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="3412:4110" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="3444:4080" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="3497:3622" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="3661:3834" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="3889:4047" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="4139:4837" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="4171:4807" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="4224:4349" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="4388:4561" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="4616:4774" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="4866:5217" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="4920:5187" placeholder="..." />
+            <marker date="1456620508723" expanded="true" signature="4956:5152" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

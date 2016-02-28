@@ -12,6 +12,7 @@
  * @property string $endereco
  * @property string $data_cadastro
  * @property integer $id_usuario
+ * @property integer $observacao
  *
  * The followings are the available model relations:
  * @property Usuario $idUsuario
@@ -34,13 +35,13 @@ class Fornecedor extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_usuario', 'numerical', 'integerOnly'=>true),
-			array('razao, responsavel, endereco', 'length', 'max'=>100),
-			array('telefone, email', 'length', 'max'=>45),
+			array('id_usuario', 'numerical', 'integerOnly' => true),
+			array('razao, responsavel, endereco', 'length', 'max' => 100),
+			array('telefone, email', 'length', 'max' => 45),
 			array('data_cadastro', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idFornecedor, razao, responsavel, telefone, email, endereco, data_cadastro, id_usuario', 'safe', 'on'=>'search'),
+			array('idFornecedor, razao, responsavel, telefone, email, endereco, data_cadastro, id_usuario', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -89,19 +90,19 @@ class Fornecedor extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
-		$criteria->compare('idFornecedor',$this->idFornecedor);
-		$criteria->compare('razao',$this->razao,true);
-		$criteria->compare('responsavel',$this->responsavel,true);
-		$criteria->compare('telefone',$this->telefone,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('endereco',$this->endereco,true);
-		$criteria->compare('data_cadastro',$this->data_cadastro,true);
-		$criteria->compare('id_usuario',$this->id_usuario);
+		$criteria->compare('idFornecedor', $this->idFornecedor);
+		$criteria->compare('razao', $this->razao, true);
+		$criteria->compare('responsavel', $this->responsavel, true);
+		$criteria->compare('telefone', $this->telefone, true);
+		$criteria->compare('email', $this->email, true);
+		$criteria->compare('endereco', $this->endereco, true);
+		$criteria->compare('data_cadastro', $this->data_cadastro, true);
+		$criteria->compare('id_usuario', $this->id_usuario);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+			'criteria' => $criteria,
 		));
 	}
 
@@ -111,8 +112,25 @@ class Fornecedor extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return Fornecedor the static model class
 	 */
-	public static function model($className=__CLASS__)
+	public static function model($className = __CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	public function getAllForncedores()
+	{
+		$sql = "select * from fornecedor  order by data_cadastro desc limit 0,20";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query;
+	}
+
+	public function buscarFornecedor($param)
+	{
+		$sql = "select * from fornecedor where razao like '%$param%' limit 0,20";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query;
+
 	}
 }

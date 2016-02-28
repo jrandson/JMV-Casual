@@ -9,10 +9,13 @@
             <div class="title_right">
                 <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Go!</button>
-                        </span>
+                        <form action="buscarUsuario" method="post">
+                            <input type="text" name="param" class="form-control" placeholder="Buscar pelo nome...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Buscar</button>
+                            </span>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -25,8 +28,9 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel" style="height:600px;">
                     
-                    
-                    sdlknsj
+                    <?php
+                        $this->viewData($model);
+                    ?>
                     
                     
                 </div>

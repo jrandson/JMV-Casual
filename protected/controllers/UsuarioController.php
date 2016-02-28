@@ -30,7 +30,7 @@ class UsuarioController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update'),
+                'actions' => array('create', 'update','buscarUsuario'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -109,9 +109,6 @@ class UsuarioController extends Controller {
         if (isset($_POST['Usuario'])) {
 
             $model->attributes = $_POST['Usuario'];
-            $model->id_usuario = 1;
-            $model->senha = md5($_POST['Usuario']['senha']);
-            $model->isAdmin = $_POST['Usuario']['isAdmin'];
 
             if ($model->save())
                 $this->redirect(array('view', 'id' => $model->idUsuario));
@@ -139,9 +136,9 @@ class UsuarioController extends Controller {
      * Lists all models.
      */
     public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('Usuario');
+        $users = Usuario::model()->getAllUsers();
         $this->render('index', array(
-            'dataProvider' => $dataProvider,
+            'users' => $users,
         ));
     }
 
@@ -181,6 +178,21 @@ class UsuarioController extends Controller {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'usuario-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
+        }
+    }
+
+    public function actionBuscarUsuario(){
+
+        if(isset($_POST['param'])){
+
+            $param = $_POST['param'];
+            $usuarios = Usuario::model()->buscarUsuarios($param);
+
+            $this->render('index',array('users'=>$usuarios));
+
+        }
+        else{
+            $this->redirect(array('index'));
         }
     }
 

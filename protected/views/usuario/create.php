@@ -56,27 +56,23 @@
                                         <input type="tel" id="email" name="Usuario[telefone]"  class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
-                                
-                                <div class="item form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Login<span class="required">*</span>
-                                    </label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="email" name="Usuario[login]"   class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
 
                                 <div class="item form-group">
-                                    <label for="password" class="control-label col-md-3">Senha*</label>
+                                    <label for="password" class="control-label col-md-3">Password</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="password" type="password" name="Usuario[senha]"  class="form-control col-md-7 col-xs-12" required="required">
+                                        <input id="password" type="password" name="Usuario[senha]" data-validate-length="6" class="form-control col-md-7 col-xs-12" required="required">
                                     </div>
                                 </div>
                                 <div class="item form-group">
-                                    <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">Confirme a senha*</label>
+                                    <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">Repeat Password</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="password2" type="password" name="Usuario[senha2]" data-validate-linked="password" class="form-control col-md-7 col-xs-12" required="required">
+                                        <input id="password2" type="password" name="Usuario[senha2]" data-validate-linked="Usuario[senha]" onkeyup="validaSenha();" class="form-control col-md-7 col-xs-12" required="required">
+                                        <br/><div style="color:red" id="validation_out"></div>
                                     </div>
+
                                 </div>
+
+
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-4">Tipo de usuario</label>
                                     <div class="col-md-3 col-sm-3 col-xs-3">
@@ -106,23 +102,50 @@
     </div>
     <!-- /page content -->
 </div>
+<script src="js/bootstrap.min.js"></script>
 
-<script src="<?php echo ``//Yii::app()->request->baseUrl; ?>/gentelella/js/validator/validator.js"></script>
+<!-- chart js -->
+<script src="js/chartjs/chart.min.js"></script>
+<!-- bootstrap progress js -->
+<script src="js/progressbar/bootstrap-progressbar.min.js"></script>
+<script src="js/nicescroll/jquery.nicescroll.min.js"></script>
+<!-- icheck -->
+<script src="js/icheck/icheck.min.js"></script>
+
+<script src="js/custom.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/gentelella/js/validator/validator.js"></script>
 
 <script>
+
+    function validaSenha(){
+        var senha, senha2;
+
+        senha2 = $("#password2").val();
+        senha = $("#password").val();
+        if(senha != senha2){
+            $("#validation_out").html("As senha são diferentes");
+        }
+        else{
+            $("#validation_out").html("");
+        }
+
+
+    }
+
+    /*
     // initialize the validator function
     validator.message['date'] = 'not a real date';
 
     // validate a field on "blur" event, a 'select' on 'change' event & a '.reuired' classed multifield on 'keyup':
     $('form')
-            .on('blur', 'input[required], input.optional, select.required', validator.checkField)
-            .on('change', 'select.required', validator.checkField)
-            .on('keypress', 'input[required][pattern]', validator.keypress);
+        .on('blur', 'input[required], input.optional, select.required', validator.checkField)
+        .on('change', 'select.required', validator.checkField)
+        .on('keypress', 'input[required][pattern]', validator.keypress);
 
     $('.multi.required')
-            .on('keyup blur', 'input', function () {
-                validator.checkField.apply($(this).siblings().last()[0]);
-            });
+        .on('keyup blur', 'input', function () {
+            validator.checkField.apply($(this).siblings().last()[0]);
+        });
 
     // bind the validation to the form submit event
     //$('#send').click('submit');//.prop('disabled', true);
@@ -140,4 +163,14 @@
         return false;
     });
 
+    /* FOR DEMO ONLY */
+    $('#vfields').change(function () {
+        $('form').toggleClass('mode2');
+    }).prop('checked', false);
+
+    $('#alerts').change(function () {
+        validator.defaults.alerts = (this.checked) ? false : true;
+        if (this.checked)
+            $('form .alert').remove();
+    }).prop('checked', false);
 </script>

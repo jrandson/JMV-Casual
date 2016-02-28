@@ -12,6 +12,7 @@
  * @property integer $isAdmin
  * @property integer $senha
  * @property integer $login
+ * @property integer $telefone
  *
  * The followings are the available model relations:
  * @property Cliente[] $clientes
@@ -117,6 +118,21 @@ class Usuario extends CActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    public function getAllUsers(){
+        $sql = "select * from usuario";
+
+        $query = Yii::app()->db->createCommand($sql)->queryAll();
+
+        return $query;
+    }
+
+    public function buscarUsuarios($param){
+        $sql = "select * from usuario where nome like '%$param%' limit 0,10";
+        $query = Yii::app()->db->createCommand($sql)->queryAll();
+
+        return $query;
     }
 
 }
