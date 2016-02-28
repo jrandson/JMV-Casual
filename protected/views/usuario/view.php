@@ -1,24 +1,16 @@
 <div class="right_col" role="main">
     <div class="">
-        
+
+        <?php
+            $this->renderPartial('nav',array('model'=>$model));
+        ?>
+
         <div class="page-title">
             <div class="title_left">
-                <h3>Plain Page</h3>
+                <h3><?php echo $model->nome; ?></h3>
             </div>
 
-            <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                    <div class="input-group">
-                        <form action="buscarUsuario" method="post">
-                            <input type="text" name="param" class="form-control" placeholder="Buscar pelo nome...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Buscar</button>
-                            </span>
-                        </form>
 
-                    </div>
-                </div>
-            </div>
         
         </div>
         <div class="clearfix"></div>

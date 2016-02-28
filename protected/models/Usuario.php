@@ -39,12 +39,12 @@ class Usuario extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('nome, email,login, id_usuario', 'required'),
+            array('nome, email, id_usuario', 'required'),
             array('id_usuario', 'numerical', 'integerOnly' => true),
             
             array('nome, email', 'length', 'max' => 100),
             array('dataCadastro', 'safe'),
-            array('login','unique'),
+            array('email','unique'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('idUsuario, nome, email, dataCadastro, id_usuario', 'safe', 'on' => 'search'),
@@ -73,12 +73,14 @@ class Usuario extends CActiveRecord {
             'idUsuario' => 'Id Usuario',
             'nome' => 'Nome',
             'email' => 'Email',
+            'telefone'=>'telefone',
             'dataCadastro' => 'Data de Cadastro',
             'id_usuario' => 'Id Usuario',
             'isAdmin' => 'Administrador',
             'senha' => 'Senha',
             'confirmeSenha' => 'Confirme a senha',
             'login'=>'Login',
+
         );
     }
 

@@ -11,16 +11,10 @@
                     </h3>
                 </div>
 
-                <div class="title_right">
-                    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    $this->renderPartial('search',array());
+                ?>
+
             </div>
             <div class="clearfix"></div>
 
@@ -32,7 +26,12 @@
 
                         <div class="x_content">
 
-                            <form method="post" action="create" class="form-horizontal form-label-left" >
+                            <?php $form = $this->beginWidget('CActiveForm', array(
+                                'id' => 'fornecedor-form',
+                                'enableAjaxValidation' => false,
+                                // we need the next one for transmission of files in the form.
+                                'htmlOptions' => array('enctype' => 'multipart/form-data','class'=>"form-horizontal form-label-left"),
+                            )); ?>
 
                                 <div class="item form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Razão <span class="required">*</span>
@@ -46,7 +45,7 @@
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Responsável<span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="email" name="Fornecedor[responsável]" required="required"   class="form-control col-md-7 col-xs-12">
+                                        <input type="text" id="email" name="Fornecedor[responsavel]" required="required"   class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
 
@@ -77,7 +76,7 @@
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-9">Observacao</label>
                                     <div class="col-md-6 col-sm-6 col-xs-6">
-                                        <textarea name="Forncedor[observacao]" class="resizable_textarea form-control" style="width: 100%; overflow: hidden; word-wrap: break-word; resize: horizontal; height: 87px;"></textarea>
+                                        <textarea name="Fornecedor[observacao]" class="resizable_textarea form-control" style="width: 100%; overflow: hidden; word-wrap: break-word; resize: horizontal; height: 87px;"></textarea>
                                     </div>
                                 </div>
 
@@ -88,7 +87,7 @@
                                         <button id="send" type="submit" class="btn btn-success">Cadastrar</button>
                                     </div>
                                 </div>
-                            </form>
+                            <?php $this->endWidget(); ?>
 
                         </div>
                     </div>

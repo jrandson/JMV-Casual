@@ -38,23 +38,11 @@
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>Contacts Design</h3>
+                        <h3>Usuários cadastrados no sistema</h3>
                     </div>
-                    <!--Search user -->
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <form action="buscarUsuario" method="post">
-                                    <input type="text" name="param" class="form-control" placeholder="Buscar pelo nome...">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button">Buscar</button>
-                                    </span>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Search user -->
+                    <?php
+                        $this->renderPartial('nav',array());
+                    ?>
                 </div>
 
                 <div class="row">

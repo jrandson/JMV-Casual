@@ -12,7 +12,7 @@
  * @property string $endereco
  * @property string $data_cadastro
  * @property integer $id_usuario
- * @property integer $observacao
+ * @property string $observacao
  *
  * The followings are the available model relations:
  * @property Usuario $idUsuario
@@ -71,6 +71,7 @@ class Fornecedor extends CActiveRecord
 			'endereco' => 'Endereco',
 			'data_cadastro' => 'Data Cadastro',
 			'id_usuario' => 'Id Usuario',
+			'observacao'=>'Observação',
 		);
 	}
 

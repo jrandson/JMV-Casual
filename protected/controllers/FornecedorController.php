@@ -38,16 +38,29 @@ class FornecedorController extends Controller {
     }
 
     public function actionCreate() {
-        $model = new Fornecedor;
 
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+        try{
+            $model = new Fornecedor;
 
-        if (isset($_POST['Fornecedor'])) {
-            $model->attributes = $_POST['Fornecedor'];
-            $model->id_usuario = Yii::app()->user->id;
-            if ($model->save())
-                $this->redirect(array('view', 'id' => $model->idFornecedor));
+            // Uncomment the following line if AJAX validation is needed
+            // $this->performAjaxValidation($model);
+
+            if (isset($_POST['Fornecedor'])) {
+
+                $model->attributes = $_POST['Fornecedor'];
+                $model->id_usuario = Yii::app()->user->id;
+                $model->observacao = $_POST['Fornecedor']['observacao'];
+                $model->responsavel = $_POST['Fornecedor']['responsavel'];
+
+                if ($model->save()) {
+                    $this->setFlashMessage("success","Fornecedor cadastrado com sucesso");
+                    $this->redirect(array('view', 'id' => $model->idFornecedor));
+                }
+            }
+
+        }
+        catch(Exception $e){
+            $this->setFlashMessage("error",$e->getMessage());
         }
 
         $this->render('create', array(
@@ -56,15 +69,28 @@ class FornecedorController extends Controller {
     }
 
     public function actionUpdate($id) {
-        $model = $this->loadModel($id);
 
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+        try{
+            $model = $this->loadModel($id);
 
-        if (isset($_POST['Fornecedor'])) {
-            $model->attributes = $_POST['Fornecedor'];
-            if ($model->save())
-                $this->redirect(array('view', 'id' => $model->idFornecedor));
+            // Uncomment the following line if AJAX validation is needed
+            // $this->performAjaxValidation($model);
+
+            if (isset($_POST['Fornecedor'])) {
+;
+                $model->attributes = $_POST['Fornecedor'];
+                $model->observacao = $_POST['Fornecedor']['observacao'];
+                $model->responsavel = $_POST['Fornecedor']['responsavel'];
+
+                if ($model->save()) {
+                    $this->setFlashMessage("success","Fornecedor atualizado com sucesso.");
+                    $this->redirect(array('view', 'id' => $model->idFornecedor));
+                }
+            }
+
+        }
+        catch(Exception $e){
+            $this->setFlashMessage("error",$e->getMessage());
         }
 
         $this->render('update', array(

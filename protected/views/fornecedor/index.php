@@ -27,28 +27,22 @@
     <div class="main_container">
 
         <div class="right_col" role="main">
-
+            <?php
+                $this->renderPartial('search',array());
+                $this->renderPartial('nav',array());
+            ?>
             <div class="">
+
                 <div class="page-title">
+
+
                     <div class="title_left">
                         <h3>Fornecedores</h3>
                     </div>
-                    <!--Search user -->
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <form action="buscarFornecedor" method="post">
-                                    <input type="text" class="form-control" name="param" placeholder="Search for...">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button">Go!</button>
-                                    </span>
-                                </form>
 
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Search user -->
                 </div>
+
+
 
                 <div class="row">
                     <div class="col-md-12">
@@ -90,7 +84,7 @@
                                                             <td><?php echo $fornecedor['telefone']; ?></td>
                                                             <td><?php echo $fornecedor['email']; ?></td>
                                                             <td><?php echo $fornecedor['endereco']; ?></td>
-                                                            <td><i class="fa fa-eye"></i><?php echo CHtml::link('Visualizar',array('update','id'=>$fornecedor['idFornecedor'])); ?></td>
+                                                            <td><i class="fa fa-eye"></i><?php echo CHtml::link('Visualizar',array('view','id'=>$fornecedor['idFornecedor'])); ?></td>
                                                         </tr>
                                                     <?php endforeach;
                                                     if(empty($fornecedor)){

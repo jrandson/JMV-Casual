@@ -3,6 +3,7 @@
 	<!-- page content -->
 	<div class="right_col" role="main">
 
+		<?php $this->renderPartial('nav',array('model'=>$model)); ?>
 		<div class="">
 			<div class="page-title">
 				<div class="title_left">
@@ -22,7 +23,13 @@
 
 						<div class="x_content">
 
-							<form method="post" action="<?php echo Yii::app()->baseUrl.'/index.php/usuario/update'; ?>" class="form-horizontal form-label-left" >
+
+							<?php $form = $this->beginWidget('CActiveForm', array(
+								'id' => 'usuario-form',
+								'enableAjaxValidation' => false,
+								// we need the next one for transmission of files in the form.
+								'htmlOptions' => array('enctype' => 'multipart/form-data','class'=>"form-horizontal form-label-left"),
+							)); ?>
 
 								<div class="item form-group">
 									<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nome <span class="required">*</span>
@@ -51,8 +58,8 @@
 									<label class="control-label col-md-3 col-sm-3 col-xs-4">Tipo de usuario</label>
 									<div class="col-md-3 col-sm-3 col-xs-3">
 										<select class="form-control" name="Usuario[isAdmin]">
-											<option value="1">Admin</option>
-											<option value="0">Usuario Normal</option>
+											<option value="1"  >Admin</option>
+											<option value="0" <?php echo !$model->isAdmin?'selected':''; ?>>Usuario Normal</option>
 										</select>
 									</div>
 								</div>
@@ -64,7 +71,7 @@
 										<button id="send" type="submit" class="btn btn-success">Atualizar</button>
 									</div>
 								</div>
-							</form>
+							<?php $this->endWidget(); ?>
 
 						</div>
 					</div>

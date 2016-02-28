@@ -7,6 +7,10 @@
 
 		<div class="">
 			<div class="page-title">
+				<?php
+				$this->renderPartial('search',array());
+				$this->renderPartial('nav',array('model'=>$model));
+				?>
 				<div class="title_left">
 					<h3>
 						Cadastro de Fornecedor
@@ -52,17 +56,20 @@
 							);
 							?>
 
-							<h1>Update Fornecedor <?php echo $model->idFornecedor; ?></h1>
 
-							<?php $this->renderPartial('_form', array('model'=>$model)); ?>
 
-							<form method="post" action="create" class="form-horizontal form-label-left" >
+							<?php $form = $this->beginWidget('CActiveForm', array(
+								'id' => 'fornecedor-form',
+								'enableAjaxValidation' => false,
+								// we need the next one for transmission of files in the form.
+								'htmlOptions' => array('enctype' => 'multipart/form-data','class'=>"form-horizontal form-label-left"),
+							)); ?>
 
 								<div class="item form-group">
 									<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Razão <span class="required">*</span>
 									</label>
 									<div class="col-md-6 col-sm-6 col-xs-12">
-										<input id="name"  class="form-control col-md-7 col-xs-12" name="Fornecedor[razao]" data-validate-length-range="20" data-validate-words="2" name="name" placeholder="" required="required" type="text">
+										<input id="name" value="<?php echo $model->razao; ?>" class="form-control col-md-7 col-xs-12" name="Fornecedor[razao]" data-validate-length-range="20" data-validate-words="2" name="name" placeholder="" required="required" type="text">
 									</div>
 								</div>
 
@@ -70,7 +77,7 @@
 									<label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Responsável<span class="required">*</span>
 									</label>
 									<div class="col-md-6 col-sm-6 col-xs-12">
-										<input type="text" id="email" name="Fornecedor[responsável]" required="required"   class="form-control col-md-7 col-xs-12">
+										<input type="text" id="email" value=" <?php echo $model->responsavel; ?>" name="Fornecedor[responsavel]" required="required"   class="form-control col-md-7 col-xs-12">
 									</div>
 								</div>
 
@@ -78,7 +85,7 @@
 									<label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">E-mail <span class="required"></span>
 									</label>
 									<div class="col-md-6 col-sm-6 col-xs-12">
-										<input type="email" id="email" name="Fornecedor[email]"   class="form-control col-md-7 col-xs-12">
+										<input type="email" id="email" value="<?php echo $model->email; ?>" name="Fornecedor[email]"   class="form-control col-md-7 col-xs-12">
 									</div>
 								</div>
 
@@ -86,7 +93,7 @@
 									<label class="control-label col-md-3 col-sm-3 col-xs-12" >Telefone <span class="required">*</span>
 									</label>
 									<div class="col-md-6 col-sm-6 col-xs-12">
-										<input type="tel" id="telefone" name="Fornecedor[telefone]" required="required"  class="form-control col-md-7 col-xs-12">
+										<input type="tel" id="telefone" value="<?php echo $model->telefone; ?>" name="Fornecedor[telefone]" required="required"  class="form-control col-md-7 col-xs-12">
 									</div>
 								</div>
 
@@ -94,14 +101,14 @@
 									<label class="control-label col-md-3 col-sm-3 col-xs-12" >Endereço<span class="required"></span>
 									</label>
 									<div class="col-md-6 col-sm-6 col-xs-12">
-										<input type="text" id="email" name="Fornecedor[endereco]"  class="form-control col-md-7 col-xs-12">
+										<input type="text" value="<?php echo $model->endereco; ?>" name="Fornecedor[endereco]"  class="form-control col-md-7 col-xs-12">
 									</div>
 								</div>
 
 								<div class="form-group">
 									<label class="control-label col-md-3 col-sm-3 col-xs-9">Observacao</label>
 									<div class="col-md-6 col-sm-6 col-xs-6">
-										<textarea name="Forncedor[observacao]" class="resizable_textarea form-control" style="width: 100%; overflow: hidden; word-wrap: break-word; resize: horizontal; height: 87px;"></textarea>
+										<textarea name="Fornecedor[observacao]"  class="resizable_textarea form-control" style="width: 100%; overflow: hidden; word-wrap: break-word; resize: horizontal; height: 87px;"><?php echo $model->observacao; ?></textarea>
 									</div>
 								</div>
 
@@ -109,10 +116,10 @@
 								<div class="form-group">
 									<div class="col-md-6 col-md-offset-3">
 										<button type="submit" class="btn btn-primary">Cancelar</button>
-										<button id="send" type="submit" class="btn btn-success">Cadastrar</button>
+										<button id="send" type="submit" class="btn btn-success">Atualizar</button>
 									</div>
 								</div>
-							</form>
+							<?php $this->endWidget(); ?>
 
 						</div>
 					</div>

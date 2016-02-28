@@ -63,67 +63,93 @@ class UsuarioController extends Controller {
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
 
-        if (isset($_POST['Usuario'])) {
-        
-            $model->attributes = $_POST['Usuario'];
-            
-            $model->id_usuario = Yii::app()->user->id;
-            $model->senha = md5($_POST['Usuario']['senha']);
-            $model->isAdmin = $_POST['Usuario']['isAdmin'];
-         
-            
-            if($_POST['Usuario']['senha'] != $_POST['Usuario']['senha2']){
-                $msg = "As senhas sao diferentes";
-                $this->redirect(array('create', 'id' => $model->idUsuario));
+        try{
+
+            if (isset($_POST['Usuario'])) {
+
+                $model->attributes = $_POST['Usuario'];
+
+                $model->id_usuario = Yii::app()->user->id;
+                $model->senha = md5($_POST['Usuario']['senha']);
+                $model->isAdmin = $_POST['Usuario']['isAdmin'];
+                $model->telefone = $_POST['Usuario']['telefone'];
+
+
+                if($_POST['Usuario']['senha'] != $_POST['Usuario']['senha2']){
+                    throw new Exception("As senha digitadas não são iguais");
+                }
+
+                if(!$this->checarEmail($model->email)){
+                    throw new Exception("Este email já está cadastrado. Por favor informe um email diferente");
+                }
+
+                if ($model->save()){
+                    $this->setFlashMessage('success',"Usuário cadastrado com uscesso");
+                    $this->redirect(array('view', 'id' => $model->idUsuario));
+                }
+
             }
-            
-            if(!$this->checarLogin()){
-                $msg = "Ja existe um usuario com este login";
-                $this->redirect(array('create', 'id' => $model->idUsuario));
-            }
-            
-            if ($model->save())
-                $this->redirect(array('view', 'id' => $model->idUsuario));
+
+
+        }
+        catch(Exception $e){
+            $this->setFlashMessage("error",$e->getMessage());
+            $this->redirect(array('create',));
         }
 
         $this->render('create', array(
             'model' => $model,
         ));
     }
-    
-    private function checarLogin(){
-        return 1;
+
+    private function checarEmail($email){
+        $model= Usuario::model()->find('email = :email',array(':email'=>$email));
+
+        if($model == null){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+
     }
+
     /**
      * Updates a particular model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id the ID of the model to be updated
      */
     public function actionUpdate($id) {
-        $model = $this->loadModel($id);
-        $model->confirmeSenha = $model->senha;
 
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+        try{
+            $model = $this->loadModel($id);
+            $model->confirmeSenha = $model->senha;
 
-        if (isset($_POST['Usuario'])) {
+            // Uncomment the following line if AJAX validation is needed
+            // $this->performAjaxValidation($model);
 
-            $model->attributes = $_POST['Usuario'];
+            if (isset($_POST['Usuario'])) {
 
-            if ($model->save())
-                $this->redirect(array('view', 'id' => $model->idUsuario));
+                $model->attributes = $_POST['Usuario'];
+                $model->telefone = $_POST['Usuario']['telefone'];
+                $model->isAdmin = $_POST['Usuario']['isAdmin'];
+
+                if ($model->save()) {
+                    $this->setFlashMessage("success","Usuário atualizado com sucesso");
+                    $this->redirect(array('view', 'id' => $model->idUsuario));
+                }
+            }
         }
+        catch(Exception $e){
+            $this->setFlashMessage("error",$e->getMessage());
+        }
+
 
         $this->render('update', array(
             'model' => $model,
         ));
     }
 
-    /**
-     * Deletes a particular model.
-     * If deletion is successful, the browser will be redirected to the 'admin' page.
-     * @param integer $id the ID of the model to be deleted
-     */
     public function actionDelete($id) {
         $this->loadModel($id)->delete();
 
@@ -132,9 +158,6 @@ class UsuarioController extends Controller {
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
     }
 
-    /**
-     * Lists all models.
-     */
     public function actionIndex() {
         $users = Usuario::model()->getAllUsers();
         $this->render('index', array(
@@ -142,9 +165,6 @@ class UsuarioController extends Controller {
         ));
     }
 
-    /**
-     * Manages all models.
-     */
     public function actionAdmin() {
         $model = new Usuario('search');
         $model->unsetAttributes();  // clear any default values
@@ -156,13 +176,6 @@ class UsuarioController extends Controller {
         ));
     }
 
-    /**
-     * Returns the data model based on the primary key given in the GET variable.
-     * If the data model is not found, an HTTP exception will be raised.
-     * @param integer $id the ID of the model to be loaded
-     * @return Usuario the loaded model
-     * @throws CHttpException
-     */
     public function loadModel($id) {
         $model = Usuario::model()->findByPk($id);
         if ($model === null)
