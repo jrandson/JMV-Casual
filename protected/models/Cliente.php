@@ -138,15 +138,42 @@ class Cliente extends CActiveRecord
 			return array();
 		}
 
-		$sql = "select * from item_venda iv
+		$sql = "select v.* from item_venda iv
 				inner join venda v on iv.id_venda = v.idVenda
 				inner join conta co on co.id_venda = v.idVenda
 				inner join cliente c on co.id_cliente = c.idCliente
-				where c.idCliente = $idCliente";
+				where c.idCliente = $idCliente and co.quitada = 0";
 
-		$query = $this->getQuery($sql);
+		$queryVendas = $this->getQuery($sql);
 
-		return $query;
+		$debitos = array();
+		foreach($queryVendas as $row){
+			$venda = $row;
+
+			$sql = "select iv.*, p.descricao from item_venda iv
+				inner join produto p on iv.id_produto = p.idProduto
+				inner join venda v on iv.id_venda = v.idVenda
+				where v.idVenda = ".$row['idVenda'];
+
+			$query = $this->getQuery($sql);
+
+			$venda['itensVenda'] = $query;
+			$venda['totalVenda'] = $this->getTotalVenda($query);
+
+			$debitos[] = $venda;
+
+		}
+
+		return $debitos;
 
         }
+
+	private function getTotalVenda($itensVenda){
+		$total = 0;
+		foreach($itensVenda as $item){
+			$total += $item['preco'];
+		}
+
+		return;
+	}
 }

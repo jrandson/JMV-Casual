@@ -8,6 +8,7 @@
  * @property integer $id_venda
  * @property integer $id_produto
  * @property integer $quantidade
+ * @property float $preco
  *
  * The followings are the available model relations:
  * @property Produto $idProduto
@@ -26,8 +27,7 @@ class ItemVenda extends CActiveRecord
 	/**
 	 * @return array validation rules for model attributes.
 	 */
-	public function rules()
-	{
+	public function rules() {
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
@@ -55,6 +55,7 @@ class ItemVenda extends CActiveRecord
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
+
 	public function attributeLabels()
 	{
 		return array(
@@ -62,6 +63,7 @@ class ItemVenda extends CActiveRecord
 			'id_venda' => 'Id Venda',
 			'id_produto' => 'Id Produto',
 			'quantidade' => 'Quantidade',
+			'preco'=>'Preço',
 		);
 	}
 
@@ -93,12 +95,6 @@ class ItemVenda extends CActiveRecord
 		));
 	}
 
-	/**
-	 * Returns the static model of the specified AR class.
-	 * Please note that you should have this exact method in all your CActiveRecord descendants!
-	 * @param string $className active record class name.
-	 * @return ItemVenda the static model class
-	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);

@@ -31,15 +31,17 @@
         <div class="row">
 
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel" style="height:600px;">
+                <div class="x_panel" >
 
                     <div class="x_content">
                         <form id="searchProduct" method="post" action="addItem" >
+
+                            <input type="hidden" id="idProduto" name="idPorduto" value=""/>
                             <div class="row">
                                 <div class="col-md-2 col-sm-12 col-xs-12 form-group">
 
                                     <label class="control-label col-md-2 col-sm-12 col-xs-12">Código</label>
-                                    <input name="itemVenda[idProduto]" id="idProduto" type="text" placeholder="" class="form-control" onblur="getProduto();" >
+                                    <input name="itemVenda[codProduto]" id="codProduto" type="text" placeholder="" class="form-control" onblur="getProduto();" >
 
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
@@ -67,7 +69,6 @@
                                     <input id="subTotal" name="itemVenda[subtotal]" type="text" placeholder="" class="form-control" readonly="true">
                                 </div>
                                 <div class="col-md-12 col-sm-4 col-xs-4 form-group">
-
                                     <button type="submit" class="btn btn-success" >Adicionar</button>
                                 </div>
                                 
@@ -103,12 +104,14 @@
                                         <th>Codigo</th>
                                         <th style="width: 59%">Descrição</th>
                                         <th>Subtotal</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>                             
                                     <?php
-                                    
+
                                     foreach ($venda['itensVenda'] as $itemVenda) {
+                                        $this->viewData($itemVenda);
                                         $subtotal = $itemVenda['quantidade'] * $itemVenda['preco'];
                                         ?>
                                         <tr>
@@ -117,6 +120,7 @@
                                             <td><?php //echo $itemVenda['codigo'];     ?></td>
                                             <td><?php echo $itemVenda['descricao']; ?></td>
                                             <td>R$ <?php echo number_format($subtotal, 2, ',', '.'); ?></td>
+                                            <td><?php //echo CHtml::link('Excluir',array('venda/excluirItem','idProduto'=>$itemVenda['idProduto'])); ?></td>
                                         </tr>     
                                         <?php
                                     }
@@ -165,7 +169,7 @@
     function getProduto() {
         
         var urlAction = "searchByCod";
-        var id = $("#idProduto").val();
+        var cod = $("#codProduto").val();
 
         /**
          * Envia o formulário por meio da variável questao_data
@@ -180,9 +184,11 @@
             
                 
             var returnedData = JSON.parse(result);
-            
+            alert(returnedData.codigo);
             $("#descricao").val(returnedData.descricao);
             $("#preco").val(Math.round(returnedData.preco, 2));
+            $("#idProduto").val(returnedData.idProduto);
+
 
         });
     }

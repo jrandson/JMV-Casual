@@ -25,9 +25,6 @@
                         </div>
                         <div class="clearfix"></div>
 
-                        <!-- menu prile quick info -->
-
-                        <!-- /menu prile quick info -->
 
 
 

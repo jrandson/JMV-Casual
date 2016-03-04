@@ -126,4 +126,9 @@ class Produto extends CActiveRecord
 		$query = $this->findAll();
 		return $query;
 	}
+
+	public function getProduto($param){
+		$query = Produto::model()->findAllBySql("select * from produto where descricao like '%" . $param . "%' limit 0,5");
+		return $query;
+	}
 }

@@ -31,7 +31,7 @@ class VendaController extends Controller {
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
                 'actions' => array('create', 'update', 'searchByCod', 'productQuery', 'addItem', 'finalizaVenda', 'teste',
-                    'addConta', 'getCliente','finalizarVendaAPrazo','index','view','finalizarVendaAPrazo'),
+                    'addConta', 'getCliente','finalizarVendaAPrazo','index','view','finalizarVendaAPrazo','excluirItem'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -140,18 +140,21 @@ class VendaController extends Controller {
 
     public function actionSearchByCod() {
 
-        $idProduto = $_POST['itemVenda']['idProduto'];
+        $codProduto = $_POST['itemVenda']['codProduto'];
 
         //$produto = Produto::model()->findByPk(1);
-        $produto = Produto::model()->find('codigo = :cod',array(':cod'=>$idProduto));
-
+        $produto = Produto::model()->find('codigo = :cod',array(':cod'=>$codProduto));
 
         $result = array(
             'descricao' => $produto->descricao,
             'preco' => $produto->precoVenda,
+            'idProduto'=>$produto->idProduto,
+            'codigo'=>$produto->codigo,
+            'estoque'=>$produto->estoque,
         );
 
         $result = json_encode($result);
+
         echo $result;
     }
 
@@ -161,10 +164,11 @@ class VendaController extends Controller {
         if (isset($_POST['queryParam'])) {
             $param = trim($_POST['queryParam']);
 
-            if ($param == "")
+            if ($param == "") {
                 return;
+            }
 
-            $query = Produto::model()->findAllBySql("select * from produto where descricao like '%" . $param . "%' limit 0,5");
+            $query = Produto::model()->getProduto($param);
 
             if (empty($query))
                 echo "";
@@ -180,6 +184,8 @@ class VendaController extends Controller {
 
     public function actionAddItem() {
 
+        $this->viewData($_POST);
+        return;
         $item_valido = 1;
         foreach ($_POST['itemVenda'] as $item) {
             if ($item == NULL)
@@ -201,7 +207,18 @@ class VendaController extends Controller {
             }
         }
 
+
         $this->redirect(array('venda/index'));
+    }
+
+    public function actionExcluirItem($idProduto){
+
+        $venda = Yii::app()->session['venda'];
+
+
+
+
+        $this->viewData($venda);
     }
 
     public function actionFinalizaVenda() {
@@ -252,11 +269,10 @@ class VendaController extends Controller {
                  $this->registraItemVenda($itemVenda, $model->idVenda);
             }
 
-
-
             return $model->idVenda;
 
         } catch (Exception $e) {
+            $msg = $e->getMessage();
             return 0;
         }
     }
@@ -268,6 +284,7 @@ class VendaController extends Controller {
         $itemVenda->id_venda = $idVenda;
         $itemVenda->id_produto = $itemData['idProduto'];
         $itemVenda->quantidade = $itemData['quantidade'];
+        $itemVenda->preco = $itemData['preco'];
 
         $itemVenda->save();
 
@@ -275,8 +292,7 @@ class VendaController extends Controller {
     }
 
     private function atualizaEstoque($idProduto, $quantidade) {
-        
-        echo $idProduto;
+
         $produto = Produto::model()->findByPk($idProduto);
         $produto->estoque -= $quantidade;
         $produto->save();
@@ -309,6 +325,9 @@ class VendaController extends Controller {
 
             $idVenda = $this->registrarVenda($itensVenda);
 
+            if(!$idVenda){
+                throw new Exception("Não foi possível registrar esta venda");
+            }
 
             if(isset($_POST['cliente']['idCliente'])){
                 $idCliente = $_POST['cliente']['idCliente'];
@@ -386,26 +405,31 @@ class VendaController extends Controller {
     }
 
     public function actionTeste() {
-        $produto = Produto::model()->find('codigo = :cod',array(':cod'=>11));
-        $p = Produto::model()->findByPk(1);
-        $this->viewdata($produto);
-        $this->viewdata($p);
+       unset(Yii::app()->session['venda']);
     }
 
     public function actionAddConta() {
 
-        $dataVenda = (isset(Yii::app()->session['venda'])) ? Yii::app()->session['venda'] : array();
+        try{
 
-        if (isset($_POST['conta'])){
-            
-            $conta = $_POST['conta'];
+            if (isset($_POST['conta'])){
 
-            $idVenda = $this->registrarVenda($dataVenda['itensVenda']);
-            
-            if ($idVenda) {
-                $this->criarConta($idVenda,$conta['idCliente'],$conta['pagamento']);
+                $conta = $_POST['conta'];
+
+                $idVenda = $this->registrarVenda($dataVenda['itensVenda']);
+
+                if ($idVenda) {
+                    $this->criarConta($idVenda,$conta['idCliente'],$conta['pagamento']);
+                }
             }
-        } 
+
+            $this->setFlashMessage("success","Conta registrada com sucesso");
+        }
+        catch(Exception $e){
+            $this->setFlashMessage("notice",$e->getMessage());
+        }
+
+        $dataVenda = (isset(Yii::app()->session['venda'])) ? Yii::app()->session['venda'] : array();
         
         $data = array(
             'venda' => $dataVenda,
@@ -416,16 +440,18 @@ class VendaController extends Controller {
     }
 
     private function criarConta($idVenda,$idCliente,$pagamento = 0) {
-        
+
         $conta = new Conta();
         $conta->id_cliente = $idCliente;
         $conta->id_venda = $idVenda;
 
         $conta->save();
 
-        if ($$pagamento != 0) {
-            $this->registrarPagamento($idVenda, $valor);
+        if ($pagamento > 0) {
+            $this->registrarPagamento($idVenda, $pagamento);
         }
+
+
     }
 
     public function actionGetCliente() {

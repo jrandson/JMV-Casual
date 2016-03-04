@@ -17,7 +17,7 @@
         <div class="row">
 
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel" style="height:600px;">
+                <div class="x_panel" style="">
 
                     <!-- Informações da venda!-->
                     <div class="x_content">
@@ -106,7 +106,6 @@
             url: urlAction, // action que será chamado no controlador
             data: dados // parâmetro passado, dados do form
         }).done(function (result) {
-
 
             //var returnedData = JSON.parse(result);
 
