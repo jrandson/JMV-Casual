@@ -32,8 +32,6 @@
 
                     <div class="x_content">
 
-
-
                         <?php
                         /* @var $this VendaController */
                         /* @var $model Venda */
@@ -72,8 +70,6 @@
                         ?>
 
                     </div>
-
-
                 </div>
             </div>
         </div>

@@ -6,10 +6,6 @@
                 <h3>Plain Page</h3>
             </div>
         </div>
-        <?php
-
-        ?>
-
 
         <div class="clearfix"></div>
 

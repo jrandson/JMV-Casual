@@ -30,7 +30,7 @@ class ClienteController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update'),
+                'actions' => array('create', 'update','historico'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -50,7 +50,7 @@ class ClienteController extends Controller {
     public function actionView($id) {
         $model = $this->loadModel($id);
         $debitos =  $model->getDebitos();
-        
+
         $this->render('view', array(
             'model' => $model,
             'debitos'=>$debitos,
@@ -165,6 +165,36 @@ class ClienteController extends Controller {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
+    }
+
+    public function actionHistorico(){
+
+        if(isset($_POST['historico'])){
+            $param = $_POST['historico'];
+            $data1 = $this->formataData($param['data1']);//'2016-01-01';// $param['data1'];
+            $data2 = $this->formataData($param['data2']);//$param['data2'];
+
+            //$data1 = str_replace('/','-',$data1).' 00:00:00';
+            //$data2 = str_replace('/','-',$data2).' 00:00:00';
+
+            $sql = "select * from venda where dataVenda between '$data1' AND '$data2'";
+
+
+            $query = $this->getQuery($sql);
+
+        }
+
+        $this->render(
+            'historico',
+            array('historico'=>$query)
+        );
+    }
+
+    private function formataData($input){
+        $dataIn = explode('/',$input);
+        $newDate = $dataIn[2].'-'.$dataIn[1].'-'.$dataIn[0];
+
+        return $newDate;
     }
 
 }

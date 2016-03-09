@@ -31,7 +31,7 @@ class VendaController extends Controller {
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
                 'actions' => array('create', 'update', 'searchByCod', 'productQuery', 'addItem', 'finalizaVenda', 'teste',
-                    'addConta', 'getCliente','finalizarVendaAPrazo','index','view','finalizarVendaAPrazo','excluirItem'),
+                    'addConta', 'getCliente','finalizarVendaAPrazo','index','view','finalizarVendaAPrazo','excluirItem','pagamento'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -184,8 +184,6 @@ class VendaController extends Controller {
 
     public function actionAddItem() {
 
-        $this->viewData($_POST);
-        return;
         $item_valido = 1;
         foreach ($_POST['itemVenda'] as $item) {
             if ($item == NULL)
@@ -206,7 +204,6 @@ class VendaController extends Controller {
                 Yii::app()->session['venda'] = $venda;
             }
         }
-
 
         $this->redirect(array('venda/index'));
     }
@@ -452,6 +449,18 @@ class VendaController extends Controller {
         }
 
 
+    }
+
+    public function actionPagamento(){
+        if(isset($_POST['pagamento'])){
+            $valor = $_POST['pagamento']['valor'];
+            $idVenda  = $_POST['pagamento']['idVenda'];
+            $idCliente = $_POST['pagamento']['idCliente'];
+
+            $this->registraPagamento($valor,$idVenda);
+        }
+
+        $this->redirect(array('cliente/view','id'=>$idCliente));
     }
 
     public function actionGetCliente() {

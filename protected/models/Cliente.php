@@ -138,9 +138,8 @@ class Cliente extends CActiveRecord
 			return array();
 		}
 
-		$sql = "select v.* from item_venda iv
-				inner join venda v on iv.id_venda = v.idVenda
-				inner join conta co on co.id_venda = v.idVenda
+		$sql = "select v.* from venda v
+				inner join conta co on co.id_Venda = v.idVenda
 				inner join cliente c on co.id_cliente = c.idCliente
 				where c.idCliente = $idCliente and co.quitada = 0";
 
@@ -150,7 +149,7 @@ class Cliente extends CActiveRecord
 		foreach($queryVendas as $row){
 			$venda = $row;
 
-			$sql = "select iv.*, p.descricao from item_venda iv
+			$sql = "select iv.*, p.descricao,p.codigo from item_venda iv
 				inner join produto p on iv.id_produto = p.idProduto
 				inner join venda v on iv.id_venda = v.idVenda
 				where v.idVenda = ".$row['idVenda'];
@@ -158,22 +157,48 @@ class Cliente extends CActiveRecord
 			$query = $this->getQuery($sql);
 
 			$venda['itensVenda'] = $query;
-			$venda['totalVenda'] = $this->getTotalVenda($query);
 
-			$debitos[] = $venda;
+			$totalVenda = $this->getTotalVenda($query);
+			$totalPago = $this->getTotalPago(($row['idVenda']));
+
+			if($totalVenda > $totalPago){
+				$venda['totalVenda'] = $this->getTotalVenda($query);
+				$venda['totalPago'] = $this->getTotalPago(($row['idVenda']));
+
+				$debitos[] = $venda;
+			}
+
 
 		}
 
 		return $debitos;
 
-        }
+	}
 
 	private function getTotalVenda($itensVenda){
 		$total = 0;
 		foreach($itensVenda as $item){
-			$total += $item['preco'];
+			$total += $item['preco']*$item['quantidade'];
 		}
 
-		return;
+		return $total;
+	}
+
+
+	public function getTotalPago($idVenda){
+
+		$sql = "select p.valor from pagamento p
+				inner join venda v on v.idVenda = p.id_venda
+				inner join conta c on c.id_venda = v.idVenda
+				where v.idVenda = $idVenda";
+
+		$query = $this->getQuery($sql);
+
+		$total = 0;
+		foreach($query as $row){
+			$total += $row['valor'];
+		}
+
+		return $total;
 	}
 }

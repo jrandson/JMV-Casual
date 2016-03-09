@@ -36,7 +36,7 @@
                     <div class="x_content">
                         <form id="searchProduct" method="post" action="addItem" >
 
-                            <input type="hidden" id="idProduto" name="idPorduto" value=""/>
+                            <input type="hidden" id="idProduto" name="itemVenda[idProduto]" value=""/>
                             <div class="row">
                                 <div class="col-md-2 col-sm-12 col-xs-12 form-group">
 
@@ -111,7 +111,7 @@
                                     <?php
 
                                     foreach ($venda['itensVenda'] as $itemVenda) {
-                                        $this->viewData($itemVenda);
+
                                         $subtotal = $itemVenda['quantidade'] * $itemVenda['preco'];
                                         ?>
                                         <tr>
@@ -184,7 +184,7 @@
             
                 
             var returnedData = JSON.parse(result);
-            alert(returnedData.codigo);
+
             $("#descricao").val(returnedData.descricao);
             $("#preco").val(Math.round(returnedData.preco, 2));
             $("#idProduto").val(returnedData.idProduto);
