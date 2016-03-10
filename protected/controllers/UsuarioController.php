@@ -30,7 +30,7 @@ class UsuarioController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update','buscarUsuario'),
+                'actions' => array('create', 'update','buscarUsuario','updateSenha'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -146,6 +146,37 @@ class UsuarioController extends Controller {
 
 
         $this->render('update', array(
+            'model' => $model,
+        ));
+    }
+
+    public function actionUpdateSenha($id){
+        try{
+
+            $model = Usuario::model()->findByPk($id);
+            if (isset($_POST['Usuario'])) {
+
+                $senha = $_POST['Usuario']['senha'];
+                $senha2 = $_POST['Usuario']['senha2'];
+
+                if($senha != $senha2){
+                    throw new Exception("As senhas são diferentes");
+                }
+
+                $model->senha = md5($senha);
+
+                if ($model->save()) {
+                    $this->setFlashMessage("success","Senha atualizada com sucesso");
+                    $this->redirect(array('view', 'id' => $model->idUsuario));
+                }
+            }
+        }
+        catch(Exception $e){
+            $this->setFlashMessage("error",$e->getMessage());
+        }
+
+
+        $this->render('updateSenha', array(
             'model' => $model,
         ));
     }

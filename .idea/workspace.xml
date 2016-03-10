@@ -2,19 +2,301 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5bd2bc-a8b1-4aab-80f6-cd55e34d6a0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/cliente/historico.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/avatar/128.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/avatar/48.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/avatar/profile-pic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/bg/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/bg/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/bg/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/bg/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/bg/login-background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/blogs/blog_item1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/gallery/blog_item1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/icons/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/arch-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/arch-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/autumn-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/boats-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/book-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/business-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/calendar-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/car-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/christmas-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/christmas-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/christmas-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/city-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/city-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/coffee-grass.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/coins.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/crayons.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/cupcakes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/eggs-nest.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/flower-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/flower-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/flower-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/fountain.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/leaves.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/lichterman.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/pinecone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/river-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/river-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/sunset-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/tree.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/winter-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/winter-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/winter-sun.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/images/thumbs/woodstump.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/aero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/aero@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/blue@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/flat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/flat@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/grey@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/orange@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/pink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/pink@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/purple@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/yellow@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/futurico/futurico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/futurico/futurico@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/line@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/aero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/aero@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/blue@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/grey@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/minimal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/minimal@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/orange@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/pink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/pink@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/purple@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/yellow@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/polaris/polaris.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/polaris/polaris@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/aero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/aero@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/blue@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/grey@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/orange@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/pink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/pink@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/purple@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/square.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/square@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/yellow@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/demo-img/kadmin445.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/demo-img/kadmin600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/demo-img/kadminlight445.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/demo-img/kadminlight600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Charts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/DataGrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Dropdown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Email.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Extras.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Forms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Pages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/Tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/UIElements.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/dashboard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/animation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/bootstrap-hover-dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-chartjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-flotchart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-highchart-area.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-highchart-column-bar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-highchart-combinations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-highchart-dynamic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-highchart-line.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-highchart-more.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-highchart-pie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/charts-highchart-scatter-bubble.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/drilldown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/funnel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/highchart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/highcharts-more.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/highcharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/holder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/icheck.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jplist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jplist.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery-migrate-1.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.flot.categories.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.flot.fillbetween.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.flot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.flot.pie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.flot.resize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.flot.spline.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.flot.stack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.flot.tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.metisMenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.nestable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.news-ticker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/jquery.slimscroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/modernizr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/pace.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/responsive-tabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/ui-nestable-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/script/zabuto_calendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/flat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/flat/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/futurico/futurico.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/introjs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/jplist-custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/jquery-ui-1.10.4.custom.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/jquery.news-ticker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/line.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/line/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/minimal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/minimal/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/nestable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/pace.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/polaris/polaris.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/square.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/square/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/style-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/KAdmin-Light/styles/zabuto_calendar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kadmin-master/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/components/WebUser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/usuario/updateSenha.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gentelella/form_advanced.html" afterPath="$PROJECT_DIR$/gentelella/form_advanced.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gentelella/tables_dynamic.html" afterPath="$PROJECT_DIR$/gentelella/tables_dynamic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ClienteController.php" afterPath="$PROJECT_DIR$/protected/controllers/ClienteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ProdutoController.php" afterPath="$PROJECT_DIR$/protected/controllers/ProdutoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/UsuarioController.php" afterPath="$PROJECT_DIR$/protected/controllers/UsuarioController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/VendaController.php" afterPath="$PROJECT_DIR$/protected/controllers/VendaController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Categoria.php" afterPath="$PROJECT_DIR$/protected/models/Categoria.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Cliente.php" afterPath="$PROJECT_DIR$/protected/models/Cliente.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Produto.php" afterPath="$PROJECT_DIR$/protected/models/Produto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Venda.php" afterPath="$PROJECT_DIR$/protected/models/Venda.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.1" afterPath="$PROJECT_DIR$/protected/runtime/application.log.1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.2" afterPath="$PROJECT_DIR$/protected/runtime/application.log.2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.3" afterPath="$PROJECT_DIR$/protected/runtime/application.log.3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.4" afterPath="$PROJECT_DIR$/protected/runtime/application.log.4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/cliente/historico.php" afterPath="$PROJECT_DIR$/protected/views/cliente/historico.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/cliente/view.php" afterPath="$PROJECT_DIR$/protected/views/cliente/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/venda/addConta.php" afterPath="$PROJECT_DIR$/protected/views/venda/addConta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/produto/create.php" afterPath="$PROJECT_DIR$/protected/views/produto/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/produto/index.php" afterPath="$PROJECT_DIR$/protected/views/produto/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/produto/update.php" afterPath="$PROJECT_DIR$/protected/views/produto/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/produto/view.php" afterPath="$PROJECT_DIR$/protected/views/produto/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/usuario/create.php" afterPath="$PROJECT_DIR$/protected/views/usuario/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/usuario/index.php" afterPath="$PROJECT_DIR$/protected/views/usuario/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/usuario/nav.php" afterPath="$PROJECT_DIR$/protected/views/usuario/nav.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/usuario/view.php" afterPath="$PROJECT_DIR$/protected/views/usuario/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/venda/index.php" afterPath="$PROJECT_DIR$/protected/views/venda/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/venda/view.php" afterPath="$PROJECT_DIR$/protected/views/venda/view.php" />
     </list>
@@ -45,33 +327,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/cliente/view.php">
+      <file leaf-file-name="ProdutoController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/ProdutoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.916667">
-              <caret line="101" column="60" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
+            <state vertical-scroll-proportion="-6.6346154">
+              <caret line="169" column="49" selection-start-line="169" selection-start-column="49" selection-end-line="169" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/venda/index.php">
+      <file leaf-file-name="Categoria.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/Categoria.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-7.24">
+              <caret line="94" column="12" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
+              <folding>
+                <marker date="1457569131003" expanded="true" signature="2478:2501" placeholder="Select * fro... categoria" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClienteController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClienteController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ClienteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41034484">
-              <caret line="176" column="35" selection-start-line="176" selection-start-column="35" selection-end-line="176" selection-end-column="35" />
+            <state vertical-scroll-proportion="-17.125">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
               <folding>
-                <element signature="n#actionView#0;n#ClienteController#0;n#!!top" expanded="false" />
                 <element signature="n#actionCreate#0;n#ClienteController#0;n#!!top" expanded="false" />
                 <element signature="n#actionUpdate#0;n#ClienteController#0;n#!!top" expanded="false" />
                 <element signature="n#actionDelete#0;n#ClienteController#0;n#!!top" expanded="false" />
@@ -79,8 +362,35 @@
                 <element signature="n#actionAdmin#0;n#ClienteController#0;n#!!top" expanded="false" />
                 <element signature="n#loadModel#0;n#ClienteController#0;n#!!top" expanded="false" />
                 <element signature="n#performAjaxValidation#0;n#ClienteController#0;n#!!top" expanded="false" />
-                <marker date="1457494239418" expanded="true" signature="5731:5757" placeholder="select * fro... venda" />
-                <marker date="1457494239418" expanded="true" signature="5731:5796" placeholder="select * fro... venda" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Venda.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/models/Venda.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4722222">
+              <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+              <folding>
+                <element signature="n#search#0;n#Venda#0;n#!!top" expanded="false" />
+                <element signature="n#formataData#0;n#Venda#0;n#!!top" expanded="false" />
+                <marker date="1457571998575" expanded="true" signature="2113:2356" placeholder="Select p.des... item_venda" />
+                <marker date="1457571998575" expanded="true" signature="2669:2821" placeholder="select p.val... pagamento" />
+                <marker date="1457571998575" expanded="true" signature="3177:3242" placeholder="select * fro... venda" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gentelella/form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5576923">
+              <caret line="974" column="36" selection-start-line="974" selection-start-column="36" selection-end-line="1027" selection-end-column="43" />
+              <folding>
+                <element signature="n#form#0;n#div#1;n#div#0;n#div#2;n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#5;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -89,73 +399,66 @@
       <file leaf-file-name="Cliente.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/Cliente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9166666">
-              <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
+            <state vertical-scroll-proportion="-15.083333">
+              <caret line="161" column="41" selection-start-line="161" selection-start-column="41" selection-end-line="161" selection-end-column="41" />
               <folding>
-                <marker date="1457402254486" expanded="true" signature="3877:4032" placeholder="select v.* f... item_venda" />
-                <marker date="1457402254486" expanded="true" signature="3877:4061" placeholder="select v.* f... item_venda" />
-                <marker date="1457402254486" expanded="true" signature="4191:4359" placeholder="select iv.*,... item_venda" />
-                <marker date="1457402254486" expanded="true" signature="4191:4360" placeholder="select iv.*,... item_venda" />
-                <marker date="1457402254486" expanded="true" signature="4191:4371" placeholder="select iv.*,... item_venda" />
-                <marker date="1457402254486" expanded="true" signature="4191:4372" placeholder="select iv.*,... item_venda" />
-                <marker date="1457402254486" expanded="true" signature="4191:4375" placeholder="select iv.*,... item_venda" />
-                <marker date="1457402254486" expanded="true" signature="5006:5158" placeholder="select p.val... pagamento" />
-                <marker date="1457402254486" expanded="true" signature="5006:5159" placeholder="select sum(v... pagamento" />
+                <marker date="1457571919439" expanded="true" signature="3877:4032" placeholder="select v.* f... item_venda" />
+                <marker date="1457571919439" expanded="true" signature="3877:4061" placeholder="select v.* f... item_venda" />
+                <marker date="1457571919439" expanded="true" signature="4191:4359" placeholder="select iv.*,... item_venda" />
+                <marker date="1457571919439" expanded="true" signature="4191:4360" placeholder="select iv.*,... item_venda" />
+                <marker date="1457571919439" expanded="true" signature="4191:4371" placeholder="select iv.*,... item_venda" />
+                <marker date="1457571919439" expanded="true" signature="4191:4372" placeholder="select iv.*,... item_venda" />
+                <marker date="1457571919439" expanded="true" signature="4191:4375" placeholder="select iv.*,... item_venda" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="historico.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/cliente/historico.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/produto/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="39" column="93" selection-start-line="39" selection-start-column="93" selection-end-line="39" selection-end-column="93" />
+            <state vertical-scroll-proportion="-6.0576925">
+              <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
               <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
+                <marker date="1457571222655" expanded="true" signature="2450:2493" placeholder="..." />
+                <marker date="1457571222655" expanded="true" signature="2928:3112" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VendaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
+      <file leaf-file-name="Produto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/Produto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="462" column="30" selection-start-line="462" selection-start-column="30" selection-end-line="462" selection-end-column="44" />
+            <state vertical-scroll-proportion="-9.64">
+              <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
               <folding>
-                <element signature="n#actionProductQuery#0;n#VendaController#0;n#!!top" expanded="false" />
-                <element signature="n#registraItemVenda#0;n#VendaController#0;n#!!top" expanded="false" />
+                <marker date="1457570781115" expanded="true" signature="3774:3834" placeholder="select * fro... produto" />
+                <marker date="1457570781115" expanded="true" signature="4002:4073" placeholder="select * fro... produto" />
+                <marker date="1457570781115" expanded="true" signature="4151:4262" placeholder="select c.des... produto" />
+                <marker date="1457570781115" expanded="true" signature="4648:4732" placeholder="select * fro... produto" />
+                <marker date="1457570781115" expanded="true" signature="4648:4733" placeholder="select * fro... produto" />
+                <marker date="1457570781115" expanded="true" signature="4648:4819" placeholder="select * fro... produto" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_advanced.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gentelella/form_advanced.html">
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/produto/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="422" column="40" selection-start-line="422" selection-start-column="40" selection-end-line="427" selection-end-column="46" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#15;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#16;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#17;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#18;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#19;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#20;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#21;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="23" column="175" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="175" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_search.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/cliente/_search.php">
+      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/produto/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="23" column="175" selection-start-line="23" selection-start-column="175" selection-end-line="23" selection-end-column="175" />
               <folding />
             </state>
           </provider>
@@ -169,22 +472,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/protected/models/Conta.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/footerbuttons.php" />
-        <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/scripts.php" />
-        <option value="$PROJECT_DIR$/protected/components/Controller.php" />
-        <option value="$PROJECT_DIR$/protected/views/cliente/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/error.php" />
-        <option value="$PROJECT_DIR$/protected/views/usuario/model view.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ProdutoController.php" />
-        <option value="$PROJECT_DIR$/protected/views/usuario/model_view.php" />
-        <option value="$PROJECT_DIR$/protected/views/usuario/navTop.php" />
-        <option value="$PROJECT_DIR$/protected/views/usuario/view.php" />
-        <option value="$PROJECT_DIR$/protected/views/usuario/update.php" />
-        <option value="$PROJECT_DIR$/protected/views/usuario/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/usuario/nav.php" />
-        <option value="$PROJECT_DIR$/protected/views/usuario/search.php" />
         <option value="$PROJECT_DIR$/protected/models/Usuario.php" />
         <option value="$PROJECT_DIR$/protected/views/fornecedor/nav.php" />
         <option value="$PROJECT_DIR$/protected/views/fornecedor/view.php" />
@@ -194,8 +481,6 @@
         <option value="$PROJECT_DIR$/protected/controllers/FornecedorController.php" />
         <option value="$PROJECT_DIR$/protected/views/fornecedor/create.php" />
         <option value="$PROJECT_DIR$/protected/views/fornecedor/update.php" />
-        <option value="$PROJECT_DIR$/protected/views/usuario/create.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/UsuarioController.php" />
         <option value="$PROJECT_DIR$/protected/views/categoria/index.php" />
         <option value="$PROJECT_DIR$/protected/views/categoria/search.php" />
         <option value="$PROJECT_DIR$/protected/views/categoria/nav.php" />
@@ -208,18 +493,36 @@
         <option value="$PROJECT_DIR$/gentelella/plain_page.html" />
         <option value="$PROJECT_DIR$/gentelella/tables.html" />
         <option value="$PROJECT_DIR$/protected/models/ItemVenda.php" />
-        <option value="$PROJECT_DIR$/protected/models/Produto.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/navigation.php" />
         <option value="$PROJECT_DIR$/protected/views/venda/addConta.php" />
-        <option value="$PROJECT_DIR$/protected/views/venda/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/venda/view.php" />
-        <option value="$PROJECT_DIR$/protected/models/Cliente.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/VendaController.php" />
         <option value="$PROJECT_DIR$/gentelella/form_advanced.html" />
-        <option value="$PROJECT_DIR$/protected/views/cliente/historico.php" />
         <option value="$PROJECT_DIR$/protected/views/cliente/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/cliente/historico.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ClienteController.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/venda/view.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/VendaController.php" />
+        <option value="$PROJECT_DIR$/protected/views/venda/index.php" />
+        <option value="$PROJECT_DIR$/kadmin-master/KAdmin-Light/UIElements.html" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/updateSenha.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/nav.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/usuario/create.php" />
+        <option value="$PROJECT_DIR$/gentelella/tables_dynamic.html" />
+        <option value="$PROJECT_DIR$/protected/views/produto/update.php" />
+        <option value="$PROJECT_DIR$/protected/views/produto/view.php" />
+        <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/components/WebUser.php" />
+        <option value="$PROJECT_DIR$/protected/views/produto/create.php" />
+        <option value="$PROJECT_DIR$/protected/models/Categoria.php" />
+        <option value="$PROJECT_DIR$/protected/models/Produto.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ProdutoController.php" />
+        <option value="$PROJECT_DIR$/protected/views/produto/index.php" />
+        <option value="$PROJECT_DIR$/protected/models/Cliente.php" />
+        <option value="$PROJECT_DIR$/protected/models/Venda.php" />
       </list>
     </option>
   </component>
@@ -268,7 +571,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,7 +639,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="venda" />
+              <option name="myItemId" value="produto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,11 +657,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cliente" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,6 +709,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -419,9 +718,12 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../projetomultiprova2015" />
+    <property name="SearchEverywhereHistoryKey" value="WebUser&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/views/usuario" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/protected/views" />
       <recent name="$PROJECT_DIR$/protected/views/fornecedor" />
       <recent name="$PROJECT_DIR$/protected/views/venda" />
@@ -507,7 +809,7 @@
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20196672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -516,7 +818,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2917342" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44732577" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3231018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -542,161 +844,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/protected/controllers/VendaController.php</url>
-          <line>313</line>
+          <line>335</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/protected/models/Cliente.php</url>
-          <line>133</line>
-          <option name="timeStamp" value="96" />
+          <url>file://$PROJECT_DIR$/protected/controllers/VendaController.php</url>
+          <line>241</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="98" />
+      <option name="time" value="102" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3740458">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4122137">
-          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/footerbuttons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97711265">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/usuario/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18987341">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6658228">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/usuario/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15189873">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/usuario/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03797468">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/usuario/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Fornecedor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/FornecedorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.625">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="118" column="105" selection-start-line="118" selection-start-column="105" selection-end-line="118" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/usuario/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="47" column="135" selection-start-line="47" selection-start-column="135" selection-end-line="47" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/usuario/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15189873">
-          <caret line="4" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fornecedor/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.89373296">
-          <caret line="47" column="95" selection-start-line="47" selection-start-column="95" selection-end-line="47" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/categoria/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75">
@@ -729,13 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6329114">
           <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/usuario/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.028142588">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -781,20 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/ItemVenda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="n#rules#0;n#ItemVenda#0;n#!!top" expanded="false" />
-            <element signature="n#relations#0;n#ItemVenda#0;n#!!top" expanded="false" />
-            <element signature="n#attributeLabels#0;n#ItemVenda#0;n#!!top" expanded="false" />
-            <element signature="n#search#0;n#ItemVenda#0;n#!!top" expanded="false" />
-            <element signature="n#model#0;n#ItemVenda#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/venda/pagamento.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -806,30 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39612675">
           <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.833333">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/UsuarioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019366197">
-          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Produto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70950705">
-          <caret line="129" column="20" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
-          <folding>
-            <marker date="1457042713875" expanded="true" signature="3888:3959" placeholder="select * fro... produto" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,40 +963,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/cliente/_search.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/plain_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.34791666">
+          <caret line="317" column="12" selection-start-line="317" selection-start-column="12" selection-end-line="378" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/ItemVenda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11795775">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="n#rules#0;n#ItemVenda#0;n#!!top" expanded="false" />
+            <element signature="n#relations#0;n#ItemVenda#0;n#!!top" expanded="false" />
+            <element signature="n#attributeLabels#0;n#ItemVenda#0;n#!!top" expanded="false" />
+            <element signature="n#search#0;n#ItemVenda#0;n#!!top" expanded="false" />
+            <element signature="n#model#0;n#ItemVenda#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Conta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9841549">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/venda/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46460176">
-          <caret line="67" column="39" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/venda/index.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/cliente/historico.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gentelella/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43141592">
-          <caret line="425" column="20" selection-start-line="425" selection-start-column="20" selection-end-line="434" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/plain_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34791666">
-          <caret line="317" column="12" selection-start-line="317" selection-start-column="12" selection-end-line="378" selection-end-column="34" />
+          <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -902,59 +1020,340 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/cliente/view.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/cliente/_search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.916667">
-          <caret line="101" column="60" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Cliente.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/venda/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9166666">
-          <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
-          <folding>
-            <marker date="1457402254486" expanded="true" signature="3877:4032" placeholder="select v.* f... item_venda" />
-            <marker date="1457402254486" expanded="true" signature="3877:4061" placeholder="select v.* f... item_venda" />
-            <marker date="1457402254486" expanded="true" signature="4191:4359" placeholder="select iv.*,... item_venda" />
-            <marker date="1457402254486" expanded="true" signature="4191:4360" placeholder="select iv.*,... item_venda" />
-            <marker date="1457402254486" expanded="true" signature="4191:4371" placeholder="select iv.*,... item_venda" />
-            <marker date="1457402254486" expanded="true" signature="4191:4372" placeholder="select iv.*,... item_venda" />
-            <marker date="1457402254486" expanded="true" signature="4191:4375" placeholder="select iv.*,... item_venda" />
-            <marker date="1457402254486" expanded="true" signature="5006:5158" placeholder="select p.val... pagamento" />
-            <marker date="1457402254486" expanded="true" signature="5006:5159" placeholder="select sum(v... pagamento" />
-          </folding>
+        <state vertical-scroll-proportion="-15.25">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/VendaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="462" column="30" selection-start-line="462" selection-start-column="30" selection-end-line="462" selection-end-column="44" />
+        <state vertical-scroll-proportion="-5.923077">
+          <caret line="263" column="81" selection-start-line="263" selection-start-column="81" selection-end-line="263" selection-end-column="81" />
           <folding>
-            <element signature="n#actionProductQuery#0;n#VendaController#0;n#!!top" expanded="false" />
             <element signature="n#registraItemVenda#0;n#VendaController#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/cliente/historico.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/venda/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="39" column="93" selection-start-line="39" selection-start-column="93" selection-end-line="39" selection-end-column="93" />
+        <state vertical-scroll-proportion="-14.291667">
+          <caret line="185" column="50" selection-start-line="185" selection-start-column="50" selection-end-line="185" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/cliente/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.041667">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="46" selection-end-column="22" />
           <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
+            <element signature="e#1476#5300#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kadmin-master/KAdmin-Light/UIElements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9423075">
+          <caret line="749" column="32" selection-start-line="749" selection-start-column="32" selection-end-line="760" selection-end-column="38" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#1;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#2;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#5;n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#5;n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#7;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/updateSenha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.9">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="46" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26056337">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.541667">
+          <caret line="57" column="97" selection-start-line="57" selection-start-column="97" selection-end-line="57" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/usuario/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31514084">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="n#actionCreate#0;n#UsuarioController#0;n#!!top" expanded="false" />
+            <element signature="n#checarEmail#0;n#UsuarioController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUpdate#0;n#UsuarioController#0;n#!!top" expanded="false" />
+            <element signature="n#actionDelete#0;n#UsuarioController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gentelella/tables_dynamic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4166665">
+          <caret line="964" column="8" selection-start-line="964" selection-start-column="8" selection-end-line="979" selection-end-column="79" />
+          <folding>
+            <element signature="n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#6;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#7;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#7;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#8;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#9;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#10;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#11;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#12;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#13;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#14;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#15;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#16;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#17;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#17;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#18;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#19;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#20;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#20;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#21;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#22;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#22;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#23;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#24;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#25;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#26;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#27;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#28;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#28;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#29;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#29;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#30;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#31;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#31;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#7;n#tr#31;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#32;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#33;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#td#0;n#tr#33;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#34;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#35;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#36;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#37;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#38;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#tr#39;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#8;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25">
+          <caret line="64" column="79" selection-start-line="64" selection-start-column="78" selection-end-line="64" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gentelella/form_buttons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4615386">
+          <caret line="368" column="36" selection-start-line="368" selection-start-column="36" selection-end-line="368" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gentelella/js/echart/echarts-all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0371025">
+          <caret line="5" column="6851" selection-start-line="5" selection-start-column="6851" selection-end-line="5" selection-end-column="6851" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/produto/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="n#authenticate#0;n#UserIdentity#0;n#!!top" expanded="false" />
+            <element signature="n#authenticate2#0;n#UserIdentity#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="e#1042#1288#1#PHP" expanded="false" />
+            <element signature="e#1408#1584#1#PHP" expanded="false" />
+            <element signature="e#1605#1695#1#PHP" expanded="false" />
+            <element signature="e#1707#1978#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/WebUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.041667">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/produto/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="23" column="175" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="175" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/produto/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="23" column="175" selection-start-line="23" selection-start-column="175" selection-end-line="23" selection-end-column="175" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Categoria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.24">
+          <caret line="94" column="12" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
+          <folding>
+            <marker date="1457569131003" expanded="true" signature="2478:2501" placeholder="Select * fro... categoria" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gentelella/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5576923">
+          <caret line="974" column="36" selection-start-line="974" selection-start-column="36" selection-end-line="1027" selection-end-column="43" />
+          <folding>
+            <element signature="n#form#0;n#div#1;n#div#0;n#div#2;n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Produto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.64">
+          <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
+          <folding>
+            <marker date="1457570781115" expanded="true" signature="3774:3834" placeholder="select * fro... produto" />
+            <marker date="1457570781115" expanded="true" signature="4002:4073" placeholder="select * fro... produto" />
+            <marker date="1457570781115" expanded="true" signature="4151:4262" placeholder="select c.des... produto" />
+            <marker date="1457570781115" expanded="true" signature="4648:4732" placeholder="select * fro... produto" />
+            <marker date="1457570781115" expanded="true" signature="4648:4733" placeholder="select * fro... produto" />
+            <marker date="1457570781115" expanded="true" signature="4648:4819" placeholder="select * fro... produto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ProdutoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6346154">
+          <caret line="169" column="49" selection-start-line="169" selection-start-column="49" selection-end-line="169" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/produto/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0576925">
+          <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+          <folding>
+            <marker date="1457571222655" expanded="true" signature="2450:2493" placeholder="..." />
+            <marker date="1457571222655" expanded="true" signature="2928:3112" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ClienteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41034484">
-          <caret line="176" column="35" selection-start-line="176" selection-start-column="35" selection-end-line="176" selection-end-column="35" />
+        <state vertical-scroll-proportion="-17.125">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
           <folding>
-            <element signature="n#actionView#0;n#ClienteController#0;n#!!top" expanded="false" />
             <element signature="n#actionCreate#0;n#ClienteController#0;n#!!top" expanded="false" />
             <element signature="n#actionUpdate#0;n#ClienteController#0;n#!!top" expanded="false" />
             <element signature="n#actionDelete#0;n#ClienteController#0;n#!!top" expanded="false" />
@@ -962,8 +1361,36 @@
             <element signature="n#actionAdmin#0;n#ClienteController#0;n#!!top" expanded="false" />
             <element signature="n#loadModel#0;n#ClienteController#0;n#!!top" expanded="false" />
             <element signature="n#performAjaxValidation#0;n#ClienteController#0;n#!!top" expanded="false" />
-            <marker date="1457494239418" expanded="true" signature="5731:5757" placeholder="select * fro... venda" />
-            <marker date="1457494239418" expanded="true" signature="5731:5796" placeholder="select * fro... venda" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Cliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.083333">
+          <caret line="161" column="41" selection-start-line="161" selection-start-column="41" selection-end-line="161" selection-end-column="41" />
+          <folding>
+            <marker date="1457571919439" expanded="true" signature="3877:4032" placeholder="select v.* f... item_venda" />
+            <marker date="1457571919439" expanded="true" signature="3877:4061" placeholder="select v.* f... item_venda" />
+            <marker date="1457571919439" expanded="true" signature="4191:4359" placeholder="select iv.*,... item_venda" />
+            <marker date="1457571919439" expanded="true" signature="4191:4360" placeholder="select iv.*,... item_venda" />
+            <marker date="1457571919439" expanded="true" signature="4191:4371" placeholder="select iv.*,... item_venda" />
+            <marker date="1457571919439" expanded="true" signature="4191:4372" placeholder="select iv.*,... item_venda" />
+            <marker date="1457571919439" expanded="true" signature="4191:4375" placeholder="select iv.*,... item_venda" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Venda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4722222">
+          <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding>
+            <element signature="n#search#0;n#Venda#0;n#!!top" expanded="false" />
+            <element signature="n#formataData#0;n#Venda#0;n#!!top" expanded="false" />
+            <marker date="1457571998575" expanded="true" signature="2113:2356" placeholder="Select p.des... item_venda" />
+            <marker date="1457571998575" expanded="true" signature="2669:2821" placeholder="select p.val... pagamento" />
+            <marker date="1457571998575" expanded="true" signature="3177:3242" placeholder="select * fro... venda" />
           </folding>
         </state>
       </provider>

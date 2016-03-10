@@ -171,11 +171,12 @@ class VendaController extends Controller {
             $query = Produto::model()->getProduto($param);
 
             if (empty($query))
-                echo "";
+                echo "Nada encontrado";
             else {
                 $result = "";
                 foreach ($query as $row) {
-                    $result .= "<h4>Descrição: $row->descricao </h34> <h5>Cod: $row->codigo </h5>Estoque: $row->estoque <br/>";
+                    $result .= "<h4>Descrição: $row->descricao </h4> <h5>Cod: $row->codigo </h5>Estoque: $row->estoque <br/>
+                    -------------------------------------------------------------------</br>";
                 }
                 echo $result;
             }
@@ -183,6 +184,16 @@ class VendaController extends Controller {
     }
 
     public function actionAddItem() {
+
+        $this->viewData($_POST['itemVenda']);
+        $item = $_POST['itemVenda'];
+        $produto = Produto::model()->findByPk($item['idProduto']);
+
+        if($item['quantidade'] > $produto->estoque){
+
+            $this->setFlashMessage("notice","Quantidade em estoque insuficiente. Quantidade disponível: $produto->estoque");
+            $this->redirect(array('index'));
+        }
 
         $item_valido = 1;
         foreach ($_POST['itemVenda'] as $item) {
@@ -211,18 +222,24 @@ class VendaController extends Controller {
     public function actionExcluirItem($idProduto){
 
         $venda = Yii::app()->session['venda'];
+        $itens = $venda['itensVenda'];
+        $novosItens = array();
+        foreach($itens as $item){
+            if($item['idProduto'] != $idProduto){
+                $novosItens[] = $item;
+            }
+        }
 
+        $venda['itensVenda'] = $novosItens;
+        Yii::app()->session['venda'] = $venda;
 
-
-
-        $this->viewData($venda);
+        $this->redirect(array('venda/index'));
     }
 
     public function actionFinalizaVenda() {
 
 
         $dataPayment = $_POST['dataPayment'];
-
 
         /**
          * forma de pagamento:
@@ -244,7 +261,8 @@ class VendaController extends Controller {
             if ($idVenda) {
                 $transaction->commit();
                 unset(Yii::app()->session['venda']);
-                $this->redirect(array('view', 'id' => $idVenda));
+                $this->setFlashMessage("success","Venda registrada com sucesso");
+                $this->redirect(array('index'));
             } else {
                 $transaction->rollback();
                 $this->redirect(array('venda/index'));
@@ -254,10 +272,14 @@ class VendaController extends Controller {
 
     private function registrarVenda($dataVenda) {
 
-        $model = new Venda();
         try {
 
+
+            $model = new Venda();
+
+
             $model->id_usuario = Yii::app()->user->id;
+
             if(!$model->save()){
                 throw new Exception("Erro ao registrar esta venda");                
             }

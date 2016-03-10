@@ -14,7 +14,7 @@
                     <form id="queryProduct" action="queryProduct" method="post" >
                         <div class="input-group">
 
-                            <input id="queryParam" name="queryParam" type="text" class="form-control" placeholder="Search for..." onkeydown="queryProduct();">
+                            <input id="queryParam" name="queryParam" type="text" class="form-control" placeholder="Search for..." onkeydown="queryProduct();" onkeypress="trataEnterGetProduto();">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">Go!</button>
                             </span>
@@ -41,7 +41,7 @@
                                 <div class="col-md-2 col-sm-12 col-xs-12 form-group">
 
                                     <label class="control-label col-md-2 col-sm-12 col-xs-12">Código</label>
-                                    <input name="itemVenda[codProduto]" id="codProduto" type="text" placeholder="" class="form-control" onblur="getProduto();" >
+                                    <input name="itemVenda[codProduto]" id="codProduto" type="text" placeholder="" class="form-control" onblur="getProduto();" onkeypress="trataEnterGetProduto();" />
 
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
@@ -61,7 +61,7 @@
 
                                 <div class="col-md-2 col-sm-12 col-xs-12 form-group">
                                     <label class="control-label col-md-1 col-sm-12 col-xs-12">Quantidade</label>
-                                    <input id="quantidade" name="itemVenda[quantidade]" type="text" placeholder="" class="form-control" onblur="getSubTotal();">
+                                    <input id="quantidade" name="itemVenda[quantidade]" type="text" placeholder="" class="form-control" onblur="getSubTotal();" onkeypress="trataEnterGetSubTotal();" >
                                 </div>                                
 
                                 <div class="col-md-2 col-sm-12 col-xs-12 form-group">
@@ -69,7 +69,7 @@
                                     <input id="subTotal" name="itemVenda[subtotal]" type="text" placeholder="" class="form-control" readonly="true">
                                 </div>
                                 <div class="col-md-12 col-sm-4 col-xs-4 form-group">
-                                    <button type="submit" class="btn btn-success" >Adicionar</button>
+                                    <button type="submit" id="adicionar" class="btn btn-success" >Adicionar</button>
                                 </div>
                                 
                                 <div class="title_right">
@@ -120,7 +120,7 @@
                                             <td><?php //echo $itemVenda['codigo'];     ?></td>
                                             <td><?php echo $itemVenda['descricao']; ?></td>
                                             <td>R$ <?php echo number_format($subtotal, 2, ',', '.'); ?></td>
-                                            <td><?php //echo CHtml::link('Excluir',array('venda/excluirItem','idProduto'=>$itemVenda['idProduto'])); ?></td>
+                                            <td><?php echo CHtml::link('Excluir',array('venda/excluirItem','idProduto'=>$itemVenda['idProduto'])); ?></td>
                                         </tr>     
                                         <?php
                                     }
@@ -164,12 +164,13 @@
         </div>
 </div>
 
-<script >
+<script>
 
     function getProduto() {
         
         var urlAction = "searchByCod";
         var cod = $("#codProduto").val();
+
 
         /**
          * Envia o formulário por meio da variável questao_data
@@ -181,9 +182,9 @@
             url: urlAction, // action que será chamado no controlador
             data: dados // parâmetro passado, dados do form
         }).done(function (result) {
-            
-                
+
             var returnedData = JSON.parse(result);
+            id = returnedData.idProduto;
 
             $("#descricao").val(returnedData.descricao);
             $("#preco").val(Math.round(returnedData.preco, 2));
@@ -238,6 +239,29 @@
 
         });
     }
+
+    function trataEnterGetProduto(){
+        $(document).keypress(function(e) {
+            if(e.which == 13) {
+
+                $("#quantidade").focus();
+                return false;
+
+            }
+        });
+    }
+
+    function trataEnterGetSubTotal(){
+        $(document).keypress(function(e) {
+            if(e.which == 13) {
+
+                $("#adicionar").focus();
+                return false;
+
+            }
+        });
+    }
+
 
 </script>
 

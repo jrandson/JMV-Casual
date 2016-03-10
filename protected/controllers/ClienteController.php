@@ -169,32 +169,21 @@ class ClienteController extends Controller {
 
     public function actionHistorico(){
 
+        $historico = array();
+
         if(isset($_POST['historico'])){
             $param = $_POST['historico'];
-            $data1 = $this->formataData($param['data1']);//'2016-01-01';// $param['data1'];
-            $data2 = $this->formataData($param['data2']);//$param['data2'];
-
-            //$data1 = str_replace('/','-',$data1).' 00:00:00';
-            //$data2 = str_replace('/','-',$data2).' 00:00:00';
-
-            $sql = "select * from venda where dataVenda between '$data1' AND '$data2'";
+            $data1 = $param['data1'];
+            $data2 = $param['data2'];
 
 
-            $query = $this->getQuery($sql);
+            $historico = Venda::model()->getHistorico($data1,$data2);
+            $this->viewData($historico);
+            return;
 
         }
 
-        $this->render(
-            'historico',
-            array('historico'=>$query)
-        );
-    }
-
-    private function formataData($input){
-        $dataIn = explode('/',$input);
-        $newDate = $dataIn[2].'-'.$dataIn[1].'-'.$dataIn[0];
-
-        return $newDate;
+        $this->render('historico',array('historico'=>$historico));
     }
 
 }

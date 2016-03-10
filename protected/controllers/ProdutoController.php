@@ -48,8 +48,12 @@ class ProdutoController extends Controller {
      * @param integer $id the ID of the model to be displayed
      */
     public function actionView($id) {
-        $this->render('model_view', array(
-            'model' => $this->loadModel($id),
+        $model = $this->loadModel($id);
+        $categoria = $model->getCategoria($id);
+
+        $this->render('view', array(
+            'model' => $model,
+            'categoria'=>$categoria,
         ));
     }
 
@@ -58,21 +62,34 @@ class ProdutoController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate() {
-        $model = new Produto;
-        
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
-        
-        if (isset($_POST['Produto'])) {
-            $model->attributes = $_POST['Produto'];
-            $model->codigo = $_POST['Produto']['codigo'];
-            $model->id_categoria = $_POST['Produto']['id_categoria'];
-            $model->id_usuario = Yii::app()->user->id;
 
-                    
-            if ($model->save())
-                $this->redirect(array('view', 'id' => $model->idProduto));
-     
+        try{
+
+            $model = new Produto;
+
+            // Uncomment the following line if AJAX validation is needed
+            // $this->performAjaxValidation($model);
+
+            if (isset($_POST['Produto'])) {
+                $model->attributes = $_POST['Produto'];
+                $model->codigo = $_POST['Produto']['codigo'];
+
+                if($model->verifyCode($_POST['Produto']['codigo'])){
+                    throw new Exception("Este código já está cadastrado");
+                }
+
+                $model->id_categoria = $_POST['Produto']['id_categoria'];
+                $model->id_usuario = Yii::app()->user->id;
+
+
+                if ($model->save())
+                    $this->redirect(array('view', 'id' => $model->idProduto));
+
+            }
+
+        }
+        catch(Exception $e){
+            $this->setFlashMessage("error",$e->getMessage());
         }
         
         $categorias = Categoria::model()->findAll();
@@ -85,7 +102,7 @@ class ProdutoController extends Controller {
 
     /**
      * Updates a particular model.
-     * If update is successful, the browser will be redirected to the 'view' page.
+     * If updateupdate is successful, the browser will be redirected to the 'view' page.
      * @param integer $id the ID of the model to be updated
      */
     public function actionUpdate($id) {
@@ -98,6 +115,11 @@ class ProdutoController extends Controller {
         if (isset($_POST['Produto'])) {
             $model->attributes = $_POST['Produto'];
             $model->codigo = $_POST['Produto']['codigo'];
+
+            if($model->verifyCode($_POST['Produto']['codigo'])){
+                throw new Exception("Este código já está cadastrado");
+            }
+
             $model->id_categoria = $_POST['Produto']['id_categoria'];
                         
                     
@@ -131,10 +153,22 @@ class ProdutoController extends Controller {
     public function actionIndex() {
 
         $model = new Produto();
-        $produtos = $model->getAll();
+
+        if(isset($_POST['busca'])){
+            $param = $_POST['busca'];
+            $produtos = $model->buscarProdutos($param);
+            $categoriaBuscada = Categoria::model()->findByPk($param['idCategoria']);
+        }
+        else{
+            $produtos = $model->getAll();
+        }
+
+        $categorias = Categoria::model()->getAll();
 
         $data = array(
             'produtos'=>$produtos,
+            'categoriaBuscada'=>$categoriaBuscada->descricao,
+            'categorias'=>$categorias,
         );
 
         $this->render('index',$data);

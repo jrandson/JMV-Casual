@@ -16,17 +16,11 @@
  */
 class Venda extends CActiveRecord
 {
-	/**
-	 * @return string the associated database table name
-	 */
-	public function tableName()
-	{
+
+	public function tableName(){
 		return 'venda';
 	}
 
-	/**
-	 * @return array validation rules for model attributes.
-	 */
 	public function rules()
 	{
 		// NOTE: you should only define rules for those attributes that
@@ -41,9 +35,6 @@ class Venda extends CActiveRecord
 		);
 	}
 
-	/**
-	 * @return array relational rules.
-	 */
 	public function relations()
 	{
 		// NOTE: you may need to adjust the relation name and the related
@@ -56,9 +47,6 @@ class Venda extends CActiveRecord
 		);
 	}
 
-	/**
-	 * @return array customized attribute labels (name=>label)
-	 */
 	public function attributeLabels()
 	{
 		return array(
@@ -68,18 +56,6 @@ class Venda extends CActiveRecord
 		);
 	}
 
-	/**
-	 * Retrieves a list of models based on the current search/filter conditions.
-	 *
-	 * Typical usecase:
-	 * - Initialize the model fields with values from filter form.
-	 * - Execute this method to get CActiveDataProvider instance which will filter
-	 * models according to data in model fields.
-	 * - Pass data provider to CGridView, CListView or any similar widget.
-	 *
-	 * @return CActiveDataProvider the data provider that can return the models
-	 * based on the search/filter conditions.
-	 */
 	public function search()
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
@@ -95,18 +71,13 @@ class Venda extends CActiveRecord
 		));
 	}
 
-	/**
-	 * Returns the static model of the specified AR class.
-	 * Please note that you should have this exact method in all your CActiveRecord descendants!
-	 * @param string $className active record class name.
-	 * @return Venda the static model class
-	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
 
 	public function getItensVenda($idVenda){
+
 		$sql = "Select p.descricao,p.precoVenda, iv.quantidade, (p.precoVenda * iv.quantidade) as subtotal
 				from item_venda iv
 				inner join produto p on iv.id_produto = p.idProduto
@@ -117,4 +88,58 @@ class Venda extends CActiveRecord
 
 		return $query;
 	}
+
+	public function getTotalVenda($itensVenda){
+		$total = 0;
+		foreach($itensVenda as $item){
+			$total += $item['preco']*$item['quantidade'];
+		}
+
+		return $total;
+	}
+
+	public function getTotalPago($idVenda){
+
+		$sql = "select p.valor from pagamento p
+				inner join venda v on v.idVenda = p.id_venda
+				inner join conta c on c.id_venda = v.idVenda
+				where v.idVenda = $idVenda";
+
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		$total = 0;
+		foreach($query as $row){
+			$total += $row['valor'];
+		}
+
+		return $total;
+	}
+
+	public function getHistorico($data1,$data2){
+
+		$data1 = $this->formataData($data1);//'2016-01-01';// $param['data1'];
+		$data2 = $this->formataData($data2);//$param['data2'];
+
+		$sql = "select * from venda where dataVenda between '$data1' AND '$data2'";
+
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		$historico = array();
+
+		foreach($query as $row){
+			$itensVenda = Venda::model()->getItensVenda($row['idVenda']);
+			$venda = $row;
+			$venda['itensVenda'] = $itensVenda;
+			$venda['totalVenda'] = $this->getTotalVenda($itensVenda);
+			$historico[] = $venda;
+		}
+	}
+
+	private function formataData($input){
+		$dataIn = explode('/',$input);
+		$newDate = $dataIn[2].'-'.$dataIn[0].'-'.$dataIn[1];
+
+		return $newDate;
+	}
+
 }

@@ -36,6 +36,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'class'=>'WebUser',
 		),
 
 		// uncomment the following to enable URLs in path-format
@@ -48,7 +49,6 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		
 
 		// database settings are configured in database.php
 		//'db'=>require(dirname(__FILE__).'/database.php'),
@@ -65,8 +65,6 @@ return array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
 		),
-
-
 
 		'log'=>array(
 			'class'=>'CLogRouter',

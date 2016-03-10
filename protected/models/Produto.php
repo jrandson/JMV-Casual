@@ -6,7 +6,6 @@
  * The followings are the available columns in table 'produto':
  * @property integer $idProduto
  * @property string $codigo
- * @property string $produto
  * @property string $descricao
  * @property double $precoVenda
  * @property double $precoCompra
@@ -14,6 +13,7 @@
  * @property string $localizacao
  * @property integer $id_usuario
  * @property Categoria $id_categoria
+ * @property string $dataCadastro
  * 
  *
  * The followings are the available model relations:
@@ -39,7 +39,7 @@ class Produto extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('produto', 'required'),
+			array('descricao', 'required'),
 			array('estoque, id_usuario', 'numerical', 'integerOnly'=>true),
 			array('precoVenda, precoCompra', 'numerical'),
 			array('descricao, localizacao', 'length', 'max'=>300),
@@ -122,8 +122,8 @@ class Produto extends CActiveRecord
 	}
 
 	public function getAll(){
-
-		$query = $this->findAll();
+		$sql = "select * from produto order by dataCadastro desc limit 0, 50";
+		$query = Yii::app()->db->createCommand($sql)->queryAll($sql);
 		return $query;
 	}
 
@@ -131,4 +131,34 @@ class Produto extends CActiveRecord
 		$query = Produto::model()->findAllBySql("select * from produto where descricao like '%" . $param . "%' limit 0,5");
 		return $query;
 	}
+
+	public function getCategoria($idProduto){
+		$sql = "select c.descricao from produto p inner join categoria c on p.id_categoria = c.idCategoria where p.idProduto = $idProduto";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query[0];
+	}
+
+	public function verifyCode($code){
+
+		$model = $this->find('codigo = :cod',array(':cod'=>$code));
+
+		if($model != null){
+			return 1;
+		}
+		else{
+			return 0;
+		}
+	}
+
+	public function buscarProdutos($param){
+		$idCategoria = $param['idCategoria'];
+		$param = $param['param'];
+
+		$sql = "select * from produto where id_categoria = $idCategoria and descricao like '%$param%'";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query;
+	}
+
 }

@@ -52,20 +52,10 @@
                         );
                         ?>
 
-                        <h1>View Venda #<?php echo $model->idVenda; ?></h1>
-
                         <?php
-                        $this->widget('zii.widgets.CDetailView', array(
-                            'data' => $model,
-                            'attributes' => array(
-                                'idVenda',
-                                'id_usuario',
-                                'dataVenda',
-                            ),
-                        ));
 
 
-                       // $this->viewData($itensVenda);
+                        $this->viewData($itensVenda);
 
                         ?>
 

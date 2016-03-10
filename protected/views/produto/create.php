@@ -19,15 +19,9 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Produto</label>
-                    <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="text" name="Produto[produto]" class="form-control" required="required" placeholder="Produto">                          
-                    </div>
-                </div> 
-                <div class="form-group">
                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Descrição</label>
                     <div class="col-md-9 col-sm-9 col-xs-12">
-                        <textarea name="Produto[descricao]" placeholder="Descrição" class="form-control"></textarea>
+                        <input type="text" name="Produto[descricao]" class="form-control" required="required" placeholder="Descrição" value="<?php echo $model->descricao; ?>">
                     </div>
                 </div>                
                 <div class="form-group">

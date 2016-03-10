@@ -15,26 +15,29 @@
                 <li role="presentation">
                     <a href="<?php echo 'update/'.$model->idUsuario ?>">Atualizar</a>
                 </li>
-                <?php endif;?>
-                <li role="presentation" class="dropdown">
-                    <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                        Dropdown
-                        <span class="caret"></span>
-                    </a>
-                    <ul id="menu6" class="dropdown-menu animated fadeInDown" role="menu">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a>
-                        </li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a>
-                        </li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a>
-                        </li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a>
-                        </li>
-                    </ul>
+                <li role="presentation">
+                    <a href="<?php echo 'updateSenha/'.$model->idUsuario ?>">Mudar senha</a>
                 </li>
+                <?php endif;?>
 
-                <?php $this->renderPartial('search',array()); ?>
+
+                <!-- Search -->
+                <div class="title_right">
+                    <div class="col-md-4 col-sm-6 col-xs-6 form-group pull-right top_search">
+                        <div class="input-group">
+                            <form action="buscarUsuario" method="post">
+                                <input type="text" name="param" class="form-control" placeholder="Buscar pelo nome...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">Buscar</button>
+                            </span>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Search -->
+
+                <?php //$this->renderPartial('search',array()); ?>
 
             </ul>
 

@@ -90,4 +90,11 @@ class Categoria extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getAll(){
+		$sql = "Select * from categoria";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query;
+	}
 }
