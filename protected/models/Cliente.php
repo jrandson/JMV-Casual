@@ -11,7 +11,7 @@
  * @property string $cpf
  * @property string $data_cadastro
  * @property integer $id_usuario
- * @property integer $telefone
+ * @property string $telefone
  *
  * The followings are the available model relations:
  * @property Usuario $idUsuario
@@ -66,12 +66,12 @@ class Cliente extends CActiveRecord
 		return array(
 			'idCliente' => 'Id Cliente',
 			'nome' => 'Nome',
-			'endereco' => 'Endreço',
+			'endereco' => 'Endereço',
 			'rg' => 'RG',
 			'cpf' => 'CPF',
 			'data_cadastro' => 'Data Cadastro',
 			'id_usuario' => 'Id Usuario',
-                        'telefone' => 'Telefone',
+			'telefone' => 'Telefone',
 		);
 	}
 
@@ -167,12 +167,31 @@ class Cliente extends CActiveRecord
 
 				$debitos[] = $venda;
 			}
-
-
 		}
 
 		return $debitos;
+	}
 
+	public function getAll(){
+		$sql = "select * from cliente limit 0,100";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query;
+	}
+
+	public function findCliente($param){
+
+		$sql= "select * from cliente where nome like '%$param%' or telefone  = '$param' limit 0,30";
+		$clientes = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $clientes;
+	}
+
+	public function getTotal(){
+		$sql= "select count(*) as total from cliente ";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query[0]['total'];
 	}
 
 

@@ -26,7 +26,7 @@
 
     <div class="main_container">
 
-       
+
 
         <!-- top navigation -->
         
@@ -35,14 +35,32 @@
         <!-- page content -->
         <div class="right_col" role="main">
 
+            <!-- Search -->
+            <?php
+                $this->renderPartial('nav',array());
+            ?>
+            <div class="title_right">
+                <div class="col-md-6 col-sm-6 col-xs-6 form-group pull-right top_search">
+                    <div class="input-group">
+                        <form action="buscarUsuario" method="post">
+                            <input type="text" name="param" class="form-control" placeholder="Buscar pelo nome...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">Buscar</button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search -->
+
             <div class="">
                 <div class="page-title">
+
+
                     <div class="title_left">
                         <h3>Usuários cadastrados no sistema</h3>
                     </div>
-                    <?php
-                        $this->renderPartial('nav',array());
-                    ?>
                 </div>
 
                 <div class="row">

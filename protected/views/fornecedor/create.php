@@ -14,6 +14,21 @@
                 <?php
                     $this->renderPartial('search',array());
                 ?>
+                <?php
+                //$this->renderPartial('nav',array('model'=>$model));
+                ?>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="x_content">
+                        <ul class="nav nav-pills" role="tablist">
+
+                                <a href="<?php echo Yii::app()->baseUrl.'/index.php/fornecedor'; ?>">
+                                <button type="button" class="btn btn-primary">Ver todos</button>
+                                </a>
+
+                        </ul>
+                    </div>
+                </div>
 
             </div>
             <div class="clearfix"></div>
@@ -83,7 +98,9 @@
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-3">
-                                        <button type="submit" class="btn btn-primary">Cancelar</button>
+                                        <a href="index">
+                                            <button type="submit" class="btn btn-primary">Cancelar</button>
+                                        </a>
                                         <button id="send" type="submit" class="btn btn-success">Cadastrar</button>
                                     </div>
                                 </div>

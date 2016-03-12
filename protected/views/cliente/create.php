@@ -11,16 +11,6 @@
                     </h3>
                 </div>
 
-                <div class="title_right">
-                    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="clearfix"></div>
 
@@ -80,20 +70,13 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-4">Tipo de usuario</label>
-                                    <div class="col-md-3 col-sm-3 col-xs-3">
-                                        <select class="form-control" name="Cliente[isAdmin]">
-                                            <option value="1">Admin</option>
-                                            <option value="0">Cliente Normal</option>
-                                        </select>
-                                    </div>
-                                </div>
 
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-3">
-                                        <button type="submit" class="btn btn-primary">Cancelar</button>
+                                        <a href="index">
+                                            <button type="submit" class="btn btn-primary">Cancelar</button>
+                                        </a>
                                         <button id="send" type="submit" class="btn btn-success">Cadastrar</button>
                                     </div>
                                 </div>

@@ -48,8 +48,10 @@
 
                 <h3><?php echo "Total: ".count($produtos); ?></h3>
                 <h4>
-                    <?php if(isset($categoriaBuscada))
-                            echo "categoria : ".$categoriaBuscada; ?>
+                    <?php if(isset($categoriaBuscada) || $categoriaBuscada > 0){
+                            echo "categoria : ".$categoriaBuscada;
+                    }
+                    ?>
                 </h4>
 
                 <div class="x_panel">

@@ -19,7 +19,6 @@
 
                     <div class="x_panel">
 
-
                         <div class="x_content">
 
                             <form method="post" action="create" class="form-horizontal form-label-left" >
@@ -76,7 +75,9 @@
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-3">
-                                        <button type="submit" class="btn btn-primary">Cancelar</button>
+                                        <a href="index">
+                                            <button type="submit" class="btn btn-primary">Cancelar</button>
+                                        </a>
                                         <button id="send" type="submit" class="btn btn-success">Cadastrar</button>
                                     </div>
                                 </div>

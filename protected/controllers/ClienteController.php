@@ -30,7 +30,7 @@ class ClienteController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update','historico'),
+                'actions' => array('create', 'update','historico','buscarCliente'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -69,7 +69,14 @@ class ClienteController extends Controller {
         // $this->performAjaxValidation($model);
 
         if (isset($_POST['Cliente'])) {
-            $model->attributes = $_POST['Cliente'];
+
+            $model->nome = $_POST['Cliente']['nome'];
+            $model->email = $_POST['Cliente']['email'];
+            $model->telefone = $_POST['Cliente']['telefone'];
+            $model->rg = $_POST['Cliente']['rg'];
+            $model->cpf = $_POST['Cliente']['cpf'];
+            $model->endereco = $_POST['Cliente']['endereco'];
+
             $model->id_usuario = Yii::app()->user->id;
 
             if ($model->save())
@@ -93,7 +100,14 @@ class ClienteController extends Controller {
         // $this->performAjaxValidation($model);
 
         if (isset($_POST['Cliente'])) {
-            $model->attributes = $_POST['Cliente'];
+
+            $model->nome = $_POST['Cliente']['nome'];
+            $model->email = $_POST['Cliente']['email'];
+            $model->telefone = $_POST['Cliente']['telefone'];
+            $model->rg = $_POST['Cliente']['rg'];
+            $model->cpf = $_POST['Cliente']['cpf'];
+            $model->endereco = $_POST['Cliente']['endereco'];
+
             if ($model->save())
                 $this->redirect(array('view', 'id' => $model->idCliente));
         }
@@ -121,10 +135,13 @@ class ClienteController extends Controller {
      */
     public function actionIndex() {
         $dataProvider = new CActiveDataProvider('Cliente');
-        $clientes = Cliente::model()->findAll();
+        $clientes = Cliente::model()->getAll();
+        $total = Cliente::model()->getTotal();
+
         $this->render('index', array(
             'dataProvider' => $dataProvider,
             'clientes' => $clientes,
+            'total'=>$total,
         ));
     }
 
@@ -184,6 +201,23 @@ class ClienteController extends Controller {
         }
 
         $this->render('historico',array('historico'=>$historico));
+    }
+
+    public function actionBuscarCliente(){
+
+        $clientes = array();
+        if(isset($_POST['cliente'])){
+            $param = $_POST['cliente']['param'];
+
+            $clientes = Cliente::model()->findCliente($param);
+            $total = Cliente::model()->getTotal();
+
+        }
+
+        $this->render('index',array(
+            'clientes' => $clientes,
+            'total'=>$total,
+        ));
     }
 
 }

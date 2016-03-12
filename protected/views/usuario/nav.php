@@ -1,47 +1,34 @@
 <div class="col-md-12 col-sm-12 col-xs-12">
-    <div class="x_panel">
 
-        <div class="x_content">
-            <ul class="nav nav-pills" role="tablist">
-                <?php if(isset($model)): ?>
-                <li role="presentation">
-                    <a href="<?php echo Yii::app()->baseUrl.'/index.php/usuario'; ?>">Todos os usuários</a>
-                </li>
+    <div class="x_content">
+        <ul class="nav nav-pills" role="tablist">
+
+                <?php if(Yii::app()->user->isAdmin()): ?>
+                    <a href="<?php echo Yii::app()->baseUrl.'/index.php/usuario'; ?>">
+                        <button type="button" class="btn btn-primary">Ver todos</button>
+                    <a/>
                 <?php endif;?>
-                <li role="presentation">
-                    <a href="<?php echo Yii::app()->baseUrl.'/index.php/usuario/create'; ?>">Novo Usuário</a>
-                </li>
-                <?php if(isset($model)): ?>
-                <li role="presentation">
-                    <a href="<?php echo 'update/'.$model->idUsuario ?>">Atualizar</a>
-                </li>
-                <li role="presentation">
-                    <a href="<?php echo 'updateSenha/'.$model->idUsuario ?>">Mudar senha</a>
-                </li>
+                        
+                <?php if(Yii::app()->user->isAdmin()): ?>
+                    <a href="<?php echo Yii::app()->baseUrl.'/index.php/usuario/create'; ?>">
+                        <button type="button" class="btn btn-primary">Novo Usuário</button>
+                    </a>
                 <?php endif;?>
 
+                <?php if(isset($model)): ?>
+                    <a href="<?php echo Yii::app()->baseUrl.'/index.php/usuario/update/'.$model->idUsuario ?>">
+                        <button type="button" class="btn btn-primary">Atualizar</button>
+                    </a>
 
-                <!-- Search -->
-                <div class="title_right">
-                    <div class="col-md-4 col-sm-6 col-xs-6 form-group pull-right top_search">
-                        <div class="input-group">
-                            <form action="buscarUsuario" method="post">
-                                <input type="text" name="param" class="form-control" placeholder="Buscar pelo nome...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="submit">Buscar</button>
-                            </span>
-                            </form>
+                <?php endif;?>
 
-                        </div>
-                    </div>
-                </div>
-                <!-- Search -->
-
-                <?php //$this->renderPartial('search',array()); ?>
-
-            </ul>
-
-        </div>
+                <?php if(isset($model)): ?>
+                    <a href="<?php echo Yii::app()->baseUrl.'/index.php/usuario/updateSenha/'.$model->idUsuario ?>">
+                        <button type="button" class="btn btn-primary">Mudar senha</button>
+                    </a>
+                    <a href=""></a>
+                <?php endif;?>
+        </ul>
     </div>
 </div>
 

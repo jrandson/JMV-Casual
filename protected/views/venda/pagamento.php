@@ -1,6 +1,3 @@
-<h3>Pagamento de conta</h3>
-
-
 
 <?php
 
@@ -13,13 +10,46 @@
         $this->renderPartial('_novoClientePagamento',$data);
     }
     else{
-        $this->viewData($cliente);
-        $this->viewData($venda);
+        ?>
+        <div class="row">
+
+            <h3><?php echo $cliente->nome; ?> <small> <?php echo 'End.: '.$cliente->endereco; ?></small></h3>
+        </div>
+
+        <div class="col-md-12 col-sm-6 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2><i class="fa fa-money"></i> Resgistrar pagamento</h2>
+
+                <div class="clearfix">
+                    <form method="post" action="pagamento" class="form-horizontal form-label-left">
+                        <input type="hidden" name="pagamento[idCliente]" value="<?php echo $cliente->idCliente?>">
+                        <input type="hidden" name="pagamento[idVenda]" value="<?php echo $venda['idVenda']; ?>">
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Pagamento</label>
+                            <div class="col-md-3 col-sm-9 col-xs-12">
+                                <input type="text" name="venda[pagamento]" class="form-control" placeholder="Pagamento">
+                            </div>
+                        </div>
+
+                        <div class="ln_solid"></div>
+
+                        <div class="form-group">
+                            <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                                <button type="submit" class="btn btn-primary">Cancelar</button>
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="x_content">
+
+        </div>
+        </div>
+
+        <?php
     ?>
-        <form action="finalizarVendaAPrazo" method="post">
-            <input type="text" name="venda[pagamento]" placeholder="Valor" />
-            <input type="hidden" name="cliente[idCliente]" value="<?php echo $cliente->idCliente ?>">
-            <input type="submit" value="Registrar venda">
-        </form>
+
 
     <?php } ?>

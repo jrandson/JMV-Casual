@@ -154,10 +154,14 @@ class ProdutoController extends Controller {
 
         $model = new Produto();
 
+        $categoriaBuscada = null;
         if(isset($_POST['busca'])){
             $param = $_POST['busca'];
             $produtos = $model->buscarProdutos($param);
-            $categoriaBuscada = Categoria::model()->findByPk($param['idCategoria']);
+            $modelCategoria = Categoria::model()->findByPk($param['idCategoria']);
+            $categoriaBuscada = $modelCategoria->descricao;
+            $this->viewData($categoriaBuscada);
+
         }
         else{
             $produtos = $model->getAll();
@@ -167,7 +171,7 @@ class ProdutoController extends Controller {
 
         $data = array(
             'produtos'=>$produtos,
-            'categoriaBuscada'=>$categoriaBuscada->descricao,
+            'categoriaBuscada'=>$categoriaBuscada,
             'categorias'=>$categorias,
         );
 

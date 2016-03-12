@@ -16,9 +16,8 @@
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
-                        <li><?php echo CHtml::link('Minha Conta',array()); ?></li>
-                        <li><?php echo CHtml::link('Mudar senha',array()); ?></li>
-                        <li><?php echo CHtml::link('Help',array()); ?></li>
+                        <li><?php echo CHtml::link('Minha Conta',array('usuario/view/'.$user->idUsuario)); ?></li>
+                        <li><?php echo CHtml::link('Mudar senha',array('usuario/updateSenha/'.$user->idUsuario)); ?></li>
                         <li><?php echo CHtml::link('Log out',array('site/logout')); ?></li>
                     </ul>
                 </li>

@@ -5,19 +5,9 @@
 
         <div class="page-title">
             <div class="title_left">
-                <h3>Plain Page</h3>
             </div>
 
-            <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Go!</button>
-                        </span>
-                    </div>
-                </div>
-            </div>
+
 
         </div>
 
@@ -26,18 +16,19 @@
         </div>
 
         <div class="row">
-
             <div class="col-md-12 col-sm-12 col-xs-12">
+
+                <?php $this->renderPartial('nav',array('model'=>$model));?>
+
                 <div class="x_panel" >
-
-
-                    <h1>View Cliente #<?php echo $model->idCliente; ?></h1>
 
                     <?php
                     $this->widget('zii.widgets.CDetailView', array(
                         'data' => $model,
                         'attributes' => array(
                             'nome',
+                            'telefone',
+                            'email',
                             'endereco',
                             'rg',
                             'cpf',
@@ -46,9 +37,14 @@
                     ));
                     ?>
 
-
-
-                    <h2>Débitos</h2>
+                    <?php
+                        if(empty($debitos)){
+                            echo "<p><h4>Nenhum débito pendente </h4></p>";
+                        }
+                        else{
+                            echo "<h3>Débitos </h3>";
+                        }
+                    ?>
 
 
                     <?php foreach($debitos as $debito): ?>
@@ -83,29 +79,43 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                <?php
-                                                foreach($itensVenda as $itemVenda):
-                                                $sutototal = $itemVenda['quantidade']*$itemVenda['preco'];
-                                                $total += $sutototal;
-                                                ?>
+                                                    <?php
+                                                    foreach($itensVenda as $itemVenda):
+                                                        $sutototal = $itemVenda['quantidade']*$itemVenda['preco'];
+                                                        $total += $sutototal;
+                                                        ?>
 
-                                                <tr>
-                                                    <th scope="row"><?php echo $itemVenda['codigo']; ?></th>
-                                                    <td><?php echo $itemVenda['descricao']; ?></td>
-                                                    <td><?php echo $itemVenda['preco']; ?></td>
-                                                    <td><?php echo $itemVenda['quantidade']; ?></td>
-                                                    <td><?php echo "R$ ".number_format($sutototal,2,",",","); ?></td>
-                                                </tr>
-
+                                                        <tr>
+                                                            <th scope="row"><?php echo $itemVenda['codigo']; ?></th>
+                                                            <td><?php echo $itemVenda['descricao']; ?></td>
+                                                            <td><?php echo $itemVenda['preco']; ?></td>
+                                                            <td><?php echo $itemVenda['quantidade']; ?></td>
+                                                            <td><?php echo "R$ ".number_format($sutototal,2,",",","); ?></td>
+                                                        </tr>
+                                                    <?php endforeach; ?>
                                                 </tbody>
                                             </table>
-                                        <?php endforeach; ?>
 
-                                        <form action="<?php echo Yii::app()->baseUrl.'/index.php/venda/pagamento';?>" method="post">
+                                        <br/>
+                                        <form action="<?php echo Yii::app()->baseUrl.'/index.php/venda/pagamento';?>" method="post" class="form-horizontal form-label-left">
                                             <input type="hidden" name="pagamento[idVenda]" value="<?php echo $debito['idVenda'];?>">
                                             <input type="hidden" name="pagamento[idCliente]" value="<?php echo $model->idCliente;?>">
-                                            <input type="text" name="pagamento[valor]">
-                                            <input type="submit" value="Novo Pagamento">
+
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Endereço">Valor do pagamento<span class="required"></span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" name="pagamento[valor]" placeholder="Valor" class="form-control col-md-7 col-xs-12"/>
+                                                </div>
+                                            </div>
+                                            <div class="ln_solid"></div>
+
+                                            <div class="form-group">
+                                                <div class="col-md-6 col-md-offset-3">
+                                                    <button id="send" type="submit" class="btn btn-success">Resgistrar pagamento</button>
+                                                </div>
+                                            </div>
+
                                         </form>
                                     </div>
                                 </div>

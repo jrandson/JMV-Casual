@@ -51,7 +51,7 @@
                             </div>
                         </div>
 
-                        <h2>Total: <?php echo $total;?></h2>
+                        <h2>Total: R$ <?php echo number_format($total,2,',','.');?></h2>
                         <?php
                         if (!empty($cliente)){
                         echo 'Cliente não encontrado. Deseja '.'<a href="cliente/create">cadasatrar</a>'.'um novo?';
@@ -61,7 +61,8 @@
                             ?>
                             <h4>Busque um cliente pelo numero de telefone aqui</h4>
                             <form method="post" action="getCliente" id="searchCliente">
-                                <input name="telefone" id="telefone" type="tel" placeholder="Telefone" onblur="getCliente();">
+                                <input type="hidden" value="">
+                                <input name="telefone" id="telefone" type="tel" placeholder="Telefone" onblur="getCliente();" onkeypress="trataEnterGetGetCliente();">
                             </form>
                             <?php
                         }
@@ -107,6 +108,17 @@
 
             $("#result").html(result);
 
+        });
+    }
+
+    function trataEnterGetGetCliente(){
+        $(document).keypress(function(e) {
+            if(e.which == 13) {
+
+                $("#telefone").blur();
+                return false;
+
+            }
         });
     }
 </script>

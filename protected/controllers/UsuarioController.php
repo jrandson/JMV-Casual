@@ -30,11 +30,11 @@ class UsuarioController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update','buscarUsuario','updateSenha'),
+                'actions' => array( 'update','updateSenha'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('admin', 'delete'),
+                'actions' => array('buscarUsuario','create','admin', 'delete'),
                 'users' => array('admin'),
             ),
             array('deny', // deny all users
@@ -48,6 +48,11 @@ class UsuarioController extends Controller {
      * @param integer $id the ID of the model to be displayed
      */
     public function actionView($id) {
+
+        if($id != Yii::app()->user->id){
+            $this->redirect(array('index'));;
+        }
+
         $this->render('view', array(
             'model' => $this->loadModel($id),
         ));
@@ -58,6 +63,11 @@ class UsuarioController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate() {
+
+        if(!Yii::app()->app()->isAdmin()){
+            $this->redirect(array('index'));;
+        }
+
         $model = new Usuario;
 
         // Uncomment the following line if AJAX validation is needed
@@ -190,6 +200,10 @@ class UsuarioController extends Controller {
     }
 
     public function actionIndex() {
+        if(!Yii::app()->user->isAdmin()){
+            $this->redirect(array('site/index'));
+        }
+
         $users = Usuario::model()->getAllUsers();
         $this->render('index', array(
             'users' => $users,

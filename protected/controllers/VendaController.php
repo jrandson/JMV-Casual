@@ -274,9 +274,7 @@ class VendaController extends Controller {
 
         try {
 
-
             $model = new Venda();
-
 
             $model->id_usuario = Yii::app()->user->id;
 
@@ -314,6 +312,9 @@ class VendaController extends Controller {
 
         $produto = Produto::model()->findByPk($idProduto);
         $produto->estoque -= $quantidade;
+        if($produto->estoque < 0){
+            $produto->estoque  = 0;
+        }
         $produto->save();
     }
 
@@ -431,6 +432,8 @@ class VendaController extends Controller {
 
         try{
 
+            $dataVenda = (isset(Yii::app()->session['venda'])) ? Yii::app()->session['venda'] : array();
+
             if (isset($_POST['conta'])){
 
                 $conta = $_POST['conta'];
@@ -439,18 +442,18 @@ class VendaController extends Controller {
 
                 if ($idVenda) {
                     $this->criarConta($idVenda,$conta['idCliente'],$conta['pagamento']);
+
+                    $this->setFlashMessage("success","Conta registrada com sucesso");
                 }
             }
 
-            $this->setFlashMessage("success","Conta registrada com sucesso");
         }
         catch(Exception $e){
             $this->setFlashMessage("notice",$e->getMessage());
         }
-
-        $dataVenda = (isset(Yii::app()->session['venda'])) ? Yii::app()->session['venda'] : array();
         
         $data = array(
+
             'venda' => $dataVenda,
             'dataVenda'=>$dataVenda,
         );
@@ -494,11 +497,11 @@ class VendaController extends Controller {
         $cliente = Cliente::model()->buscaCliente($telefone);
         if($cliente == null){
             $debitos = array();
-
         }
         else{
             $debitos = $cliente->getDebitos();
         }
+
 
         $this->renderPartial('pagamento', array(
             'cliente' => $cliente,
