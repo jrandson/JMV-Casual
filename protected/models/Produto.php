@@ -127,6 +127,13 @@ class Produto extends CActiveRecord
 		return $query;
 	}
 
+	public function getTotal(){
+		$sql = "select count(*) as total from produto";
+		$query = Yii::app()->db->createCommand($sql)->queryAll($sql);
+
+		return number_format($query[0]['total'],0,',','.');
+	}
+
 	public function getProduto($param){
 		$query = Produto::model()->findAllBySql("select * from produto where descricao like '%" . $param . "%' limit 0,5");
 		return $query;
@@ -154,8 +161,24 @@ class Produto extends CActiveRecord
 	public function buscarProdutos($param){
 		$idCategoria = $param['idCategoria'];
 		$param = $param['param'];
+		if($idCategoria == 0){
+			$sql = "select * from produto where  descricao like '%$param%'";
+		}
+		else{
+			$sql = "select * from produto where id_categoria = $idCategoria and descricao like '%$param%'";
+		}
 
-		$sql = "select * from produto where id_categoria = $idCategoria and descricao like '%$param%'";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query;
+	}
+
+	public function getItensMaisVendidos(){
+		$sql = "select p.descricao,p.precoVenda,sum(iv.quantidade) as soma, (sum(iv.quantidade)*p.precoVenda) as total from produto p
+                inner join item_venda iv on p.idProduto = iv.id_produto
+                inner join venda v on v.idVenda = iv.id_venda
+                group by p.idProduto order by v.dataVenda,soma DESC limit 0,10";
+
 		$query = Yii::app()->db->createCommand($sql)->queryAll();
 
 		return $query;

@@ -26,6 +26,7 @@
                                 </div>
                                 <div class="col-md-5 col-sm-9 col-xs-12">
                                     <select name="busca[idCategoria]" class="form-control">
+                                        <option value="0">Escolha uma catgoria</option>
                                         <?php foreach($categorias as $categoria): ?>
                                             <option value="<?php echo $categoria['idCategoria'] ?>"><?php echo $categoria['descricao'] ?></option>
                                         <?php endforeach; ?>

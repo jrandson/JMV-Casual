@@ -134,4 +134,11 @@ class Fornecedor extends CActiveRecord
 		return $query;
 
 	}
+
+	public function getTotal(){
+		$sql = "select count(*) as total from fornecedor";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query[0]['total'];
+	}
 }

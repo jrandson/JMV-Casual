@@ -4,7 +4,7 @@
         <h3>General</h3>
         <ul class="nav side-menu">
             <?php if (Yii::app()->user->isAdmin()): ?>
-                <li><a><i class="fa fa-shopping-cart"></i>Admin<span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-bar-chart"></i>Admin<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu" style="display: none">
                         <li>
                             <a href="<?php echo Yii::app()->baseUrl . '/index.php/site/' ?>">Admin</a>

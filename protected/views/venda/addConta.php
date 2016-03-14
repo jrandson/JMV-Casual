@@ -51,7 +51,7 @@
                             </div>
                         </div>
 
-                        <h2>Total: R$ <?php echo number_format($total,2,',','.');?></h2>
+                        <h1>Total: R$ <?php echo number_format($total,2,',','.');?></h1>
                         <?php
                         if (!empty($cliente)){
                         echo 'Cliente não encontrado. Deseja '.'<a href="cliente/create">cadasatrar</a>'.'um novo?';

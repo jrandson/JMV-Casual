@@ -78,7 +78,7 @@ class Venda extends CActiveRecord
 
 	public function getItensVenda($idVenda){
 
-		$sql = "Select p.descricao,p.precoVenda, iv.quantidade, (p.precoVenda * iv.quantidade) as subtotal
+		$sql = "Select p.codigo, p.descricao,iv.preco, iv.quantidade, (iv.preco * iv.quantidade) as subtotal
 				from item_venda iv
 				inner join produto p on iv.id_produto = p.idProduto
  				inner join venda v on iv.id_venda = v.idVenda
@@ -115,12 +115,13 @@ class Venda extends CActiveRecord
 		return $total;
 	}
 
-	public function getHistorico($data1,$data2){
+	public function getHistorico($idCliente, $data1,$data2){
 
 		$data1 = $this->formataData($data1);//'2016-01-01';// $param['data1'];
 		$data2 = $this->formataData($data2);//$param['data2'];
 
-		$sql = "select * from venda where dataVenda between '$data1' AND '$data2'";
+		$sql = "select * from venda v inner join conta c on v.idVenda = c.id_venda where
+				c.id_cliente = $idCliente and (v.dataVenda >='$data1' AND v.dataVenda <= '$data2') ";
 
 		$query = Yii::app()->db->createCommand($sql)->queryAll();
 
@@ -131,15 +132,63 @@ class Venda extends CActiveRecord
 			$venda = $row;
 			$venda['itensVenda'] = $itensVenda;
 			$venda['totalVenda'] = $this->getTotalVenda($itensVenda);
+			$venda['totalPago'] = $this->getTotalPago($row['idVenda']);
 			$historico[] = $venda;
 		}
+
+		return $historico;
 	}
 
 	private function formataData($input){
 		$dataIn = explode('/',$input);
-		$newDate = $dataIn[2].'-'.$dataIn[0].'-'.$dataIn[1];
+		$newDate = $dataIn[2].'-'.$dataIn[0].'-'.$dataIn[1].' 00:00:00';
 
 		return $newDate;
 	}
+
+	public function getTotalVendaHoje(){
+		$dataIni = date('Y-m-d 00:00:00');
+		$datafim = date('Y-m-d 23:59:59');
+		$sql = "select * from venda where dataVenda >= '$dataIni' and dataVenda <= '$datafim'";
+		$vendas = Yii::app()->db->createCommand($sql)->queryAll();
+
+		$total = 0;
+		foreach($vendas as $venda){
+
+			$sql = "select quantidade*preco as subtotal from item_venda where id_venda = ".$venda['idVenda'];
+			$query = Yii::app()->db->createCommand($sql)->queryAll();
+			foreach($query as $item){
+				$total += $item['subtotal'];
+			}
+
+		}
+
+		return $total;
+	}
+
+	public  function getTotalvendasPrazoHoje(){
+		$dataIni = date('Y-m-d 00:00:00');
+		$datafim = date('Y-m-d 23:59:59');
+		$sql = "select v.* from venda v
+				inner join conta c on v.idVenda = c.id_venda
+				where v.dataVenda between '$dataIni' and '$datafim'";
+
+		$vendas = $query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		$total = 0;
+		foreach($vendas as $venda){
+
+			$sql = "select quantidade*preco as subtotal from item_venda where id_venda = ".$venda['idVenda'];
+			$query = Yii::app()->db->createCommand($sql)->queryAll();
+			foreach($query as $row){
+				$total += $row['subtotal'];
+			}
+
+		}
+
+		return $total;
+	}
+
+
 
 }

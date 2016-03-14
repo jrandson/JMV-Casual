@@ -20,6 +20,9 @@
             </div>
 
         </div>
+
+        <?php $this->renderPartial('nav',array()); ?>
+
         <div class="clearfix"></div>
 
         <div class="row">
@@ -41,7 +44,7 @@
 
                         <div class="form-group">
                             <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
-                                <button type="submit" class="btn btn-primary">Cancelar</button>
+                                <a href="index" class="btn btn-primary">Cancelar</a>
                                 <button type="submit" class="btn btn-success">Cadastrar</button>
                             </div>
                         </div>

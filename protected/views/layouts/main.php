@@ -21,7 +21,7 @@
                     <div class="left_col scroll-view">
 
                         <div class="navbar nav_title" style="">
-                            <a href="<?php echo Yii::app()->baseUrl.'/index.php'; ?>" class="site_title"></i> <span>Loja </span></a>
+                            <a href="<?php echo Yii::app()->baseUrl.'/index.php'; ?>" class="site_title"></i> <span>MV Casual </span></a>
                         </div>
                         <div class="clearfix"></div>
 

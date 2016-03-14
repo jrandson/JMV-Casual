@@ -184,23 +184,22 @@ class ClienteController extends Controller {
         }
     }
 
-    public function actionHistorico(){
+    public function actionHistorico($id = 0){
 
         $historico = array();
 
         if(isset($_POST['historico'])){
+            $id = $_POST['idCliente'];
             $param = $_POST['historico'];
             $data1 = $param['data1'];
             $data2 = $param['data2'];
 
-
-            $historico = Venda::model()->getHistorico($data1,$data2);
-            $this->viewData($historico);
-            return;
-
+            $historico = Venda::model()->getHistorico($id,$data1,$data2);
         }
 
-        $this->render('historico',array('historico'=>$historico));
+        $this->render('historico',array(
+            'model'=> $this->loadModel($id),
+            'historico'=>$historico));
     }
 
     public function actionBuscarCliente(){

@@ -159,8 +159,14 @@ class ProdutoController extends Controller {
             $param = $_POST['busca'];
             $produtos = $model->buscarProdutos($param);
             $modelCategoria = Categoria::model()->findByPk($param['idCategoria']);
-            $categoriaBuscada = $modelCategoria->descricao;
-            $this->viewData($categoriaBuscada);
+            if(isset($modelCategoria)){
+                $categoriaBuscada = $modelCategoria->descricao;
+            }
+            else{
+                $categoriaBuscada = "";
+            }
+
+
 
         }
         else{

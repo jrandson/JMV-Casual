@@ -29,7 +29,28 @@ class SiteController extends Controller {
             $this->redirect(array('../index.php/venda'));
         }
 
-        $this->render('index');
+        $totalProdutos = Produto::model()->getTotal();
+        $totalVendasHoje = Venda::model()->getTotalVendaHoje();
+        $totalVendasPrazoHoje = Venda::model()->getTotalvendasPrazoHoje();
+        $totalCliente = Cliente::model()->getTotal();
+        $totalPagamentos = Pagamento::model()->getToalPagamentosDia();
+        $totalFornecedores = Fornecedor::model()->getTotal();
+
+        $totalVendasVista = $totalVendasHoje - $totalVendasPrazoHoje;
+
+
+        $data = array(
+            'totalProdutos'=>$totalProdutos,
+            'totalVendaHoje'=> $totalVendasHoje,
+            'totalVendasPrazoHoje'=> $totalVendasPrazoHoje,
+            'totalCliente'=>$totalCliente,
+            'totalPagamentos'=> $totalPagamentos,
+            'totalFornecedores'=>$totalFornecedores,
+            'totalVendasVista'=>$totalVendasVista,
+            'itensMaisVendidos' =>  Produto::model()->getItensMaisVendidos(),
+        );
+
+        $this->render('index',$data);
     }
 
     /**

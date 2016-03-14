@@ -9,7 +9,6 @@
 
 
         </div>
-        <?php $this->renderPartial('search',array()); ?>
         <?php $this->renderPartial('nav',array()); ?>
         <div class="clearfix"></div>
 
@@ -48,7 +47,7 @@
                                                 <td><?php echo $categoria->descricao ?></td>
                                                 <td><?php echo $user->nome ?></td>
                                                 <td><?php echo $categoria->dataCadastro ?></td>
-                                                <td><?php echo $categoria->dataCadastro ?></td>
+                                                <td><?php echo CHtml::link('autualizar',array('update','id'=>$categoria->idCategoria)); ?></td>
                                             </tr>
                                         <?php } ?>
                                     </tbody>

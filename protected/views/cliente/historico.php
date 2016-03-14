@@ -10,34 +10,40 @@
 
 
 <!-- page content -->
+
 <div class="right_col" role="main">
+    <?php $this->renderPartial('nav');?>
         <div class="">
             <div class="page-title">
                 <div class="title_left">
-                    <h3>Plain Page</h3>
+                    <h3><small>Histórico de compras de </small><?php echo $model->nome; ?></h3>
                 </div>
 
 
             </div>
             <div class="clearfix"></div>
 
+
             <div class="row">
 
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="x_panel" style="">
                         <div class="x_title">
-                            <h2>Plain Page</h2>
+
 
                             <div class="clearfix"></div>
 
                             <div class="x_panel" style="">
 
                                 <div class="x_content">
-                                    <form action="historico" method="post">
+                                    <form action="<?php echo Yii::app()->baseUrl.'/index.php/cliente/historico'; ?>" method="post">
+
+                                        <input type="hidden" name="idCliente" value="<?php echo $model->idCliente; ?>">
+
                                         <div class="control-group">
                                             <div class="controls">
                                                 <div class="col-md-5 xdisplay_inputx form-group has-feedback">
-                                                    <input type="text" name="historico[data1]" class="form-control has-feedback-left" id="single_cal2" placeholder="Data inicial" aria-describedby="inputSuccess2Status">
+                                                    <input type="text" name="historico[data1]" class="form-control has-feedback-left" id="single_cal2" placeholder="Data inicial" aria-describedby="inputSuccess1Status">
                                                     <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
                                                     <span id="inputSuccess1Status" class="sr-only">(success)</span>
                                                 </div>
@@ -66,8 +72,10 @@
                                     <div class="row">
 
                                         <?php
-                                            $this->viewData($historico);
-                                            return;
+                                            if(empty($historico)){
+                                                echo '<h3>Nada encontrado </h3>';
+                                            }
+
                                         ?>
 
                                         <?php foreach($historico as $venda): ?>
@@ -90,7 +98,6 @@
                                                     </div>
 
                                                     <div class="x_content">
-
                                                         <table class="table table-striped">
                                                             <thead>
                                                             <tr>
@@ -102,30 +109,23 @@
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                            <?php
-                                                            foreach($itensVenda as $itemVenda):
-                                                            $sutototal = $itemVenda['quantidade']*$itemVenda['preco'];
-                                                            $total += $sutototal;
-                                                            ?>
+                                                                <?php
+                                                                    foreach($itensVenda as $itemVenda):
+                                                                        $sutototal = $itemVenda['quantidade']*$itemVenda['preco'];
+                                                                        $total += $sutototal;
+                                                                ?>
 
-                                                            <tr>
-                                                                <th scope="row"><?php echo $itemVenda['codigo']; ?></th>
-                                                                <td><?php echo $itemVenda['descricao']; ?></td>
-                                                                <td><?php echo $itemVenda['preco']; ?></td>
-                                                                <td><?php echo $itemVenda['quantidade']; ?></td>
-                                                                <td><?php echo "R$ ".number_format($sutototal,2,",",","); ?></td>
-                                                            </tr>
+                                                                        <tr>
+                                                                            <td scope="row"><?php echo $itemVenda['codigo']; ?></td>
+                                                                            <td><?php echo $itemVenda['descricao']; ?></td>
+                                                                            <td><?php echo $itemVenda['preco']; ?></td>
+                                                                            <td><?php echo $itemVenda['quantidade']; ?></td>
+                                                                            <td><?php echo "R$ ".number_format($itemVenda['subtotal'],2,",","."); ?></td>
+                                                                        </tr>
+                                                                    <?php endforeach; ?>
 
                                                             </tbody>
                                                         </table>
-                                                        <?php endforeach; ?>
-
-                                                        <form action="<?php echo Yii::app()->baseUrl.'/index.php/venda/pagamento';?>" method="post">
-                                                            <input type="hidden" name="pagamento[idVenda]" value="<?php echo $debito['idVenda'];?>">
-                                                            <input type="hidden" name="pagamento[idCliente]" value="<?php echo $model->idCliente;?>">
-                                                            <input type="text" name="pagamento[valor]">
-                                                            <input type="submit" value="Novo Pagamento">
-                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>

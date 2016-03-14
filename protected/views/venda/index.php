@@ -71,6 +71,10 @@
                                 <div class="col-md-12 col-sm-4 col-xs-4 form-group">
                                     <button type="submit" id="adicionar" class="btn btn-success" >Adicionar</button>
                                 </div>
+
+                                <div class="col-md-12 col-sm-4 col-xs-4 form-group">
+                                    <button type="button" id="Cancelar" class="btn btn-small" onclick="limparCampos();" >Limpar</button>
+                                </div>
                                 
                                 <div class="title_right">
                                     <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
@@ -160,7 +164,16 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="alignleft">
+                    <a href="cancelarVenda">
+                        <input type="button" class="btn btn-danger pull-right" value="Cancelar Venda" />
+                    </a>
+                </div>
+
             </form>
+
+
         </div>
 </div>
 
@@ -177,6 +190,8 @@
          */
         var dados = jQuery("#searchProduct").serialize();
 
+        limparCampos();
+
         $.ajax({
             type: 'POST', // tipo de requisição: post
             url: urlAction, // action que será chamado no controlador
@@ -184,11 +199,12 @@
         }).done(function (result) {
 
             var returnedData = JSON.parse(result);
+
             id = returnedData.idProduto;
 
-            $("#descricao").val(returnedData.descricao);
-            $("#preco").val(Math.round(returnedData.preco, 2));
-            $("#idProduto").val(returnedData.idProduto);
+            $("#descricao").empty().val(returnedData.descricao);
+            $("#preco").empty().val(Math.round(returnedData.preco, 2));
+            $("#idProduto").empty().val(returnedData.idProduto);
 
 
         });
@@ -260,6 +276,12 @@
 
             }
         });
+    }
+
+    function limparCampos(){
+        $("#descricao").val("");
+        $("#preco").val("");
+        $("#idProduto").val("");
     }
 
 

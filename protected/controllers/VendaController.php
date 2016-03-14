@@ -31,7 +31,7 @@ class VendaController extends Controller {
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
                 'actions' => array('create', 'update', 'searchByCod', 'productQuery', 'addItem', 'finalizaVenda', 'teste',
-                    'addConta', 'getCliente','finalizarVendaAPrazo','index','view','finalizarVendaAPrazo','excluirItem','pagamento'),
+                    'addConta', 'getCliente','finalizarVendaAPrazo','index','view','finalizarVendaAPrazo','excluirItem','pagamento','cancelarVenda'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -145,6 +145,8 @@ class VendaController extends Controller {
         //$produto = Produto::model()->findByPk(1);
         $produto = Produto::model()->find('codigo = :cod',array(':cod'=>$codProduto));
 
+
+
         $result = array(
             'descricao' => $produto->descricao,
             'preco' => $produto->precoVenda,
@@ -185,8 +187,16 @@ class VendaController extends Controller {
 
     public function actionAddItem() {
 
+
+
         $this->viewData($_POST['itemVenda']);
         $item = $_POST['itemVenda'];
+
+        if($item['idProduto'] == null){
+            $this->setFlashMessage('notice','Nenhum item adicionado');
+            $this->redirect(array('index'));
+        }
+
         $produto = Produto::model()->findByPk($item['idProduto']);
 
         if($item['quantidade'] > $produto->estoque){
@@ -238,6 +248,10 @@ class VendaController extends Controller {
 
     public function actionFinalizaVenda() {
 
+        if(empty(Yii::app()->session['venda']['itensVenda'])){
+            $this->setFlashMessage("notice","Nenhuma item de venda foi adicionado para a venda.");
+            $this->redirect(array('index'));
+        }
 
         $dataPayment = $_POST['dataPayment'];
 
@@ -359,7 +373,7 @@ class VendaController extends Controller {
                 $idCliente = $modelCliente->idCliente;
             }
             else{
-                throw new Exception("Nehum cliente foi enviado para cadastro.");
+                throw new Exception("Nenhum cliente foi enviado para cadastro.");
             }
 
 
@@ -367,7 +381,10 @@ class VendaController extends Controller {
 
             if(isset($_POST['venda']['pagamento'])){
                 $valor = $_POST['venda']['pagamento'];
-                $this->registraPagamento($valor,$idVenda);
+                if($valor != null || !empty($valor)){
+                    $this->registraPagamento($valor,$idVenda);
+                }
+
             }
 
             $transaction->commit();
@@ -390,6 +407,7 @@ class VendaController extends Controller {
         $modelCliente->nome = $cliente['nome'];
         $modelCliente->telefone = $cliente['telefone'];
         $modelCliente->endereco = $cliente['endereco'];
+        $modelCliente->id_usuario = Yii::app()->user->id;
 
         if(!$modelCliente->save()){
             throw new Exception("Não foi possível cadastrar novo cliente");
@@ -425,7 +443,21 @@ class VendaController extends Controller {
     }
 
     public function actionTeste() {
-       unset(Yii::app()->session['venda']);
+
+        //top 10 mais vendidos
+        $sql = "select p.descricao,p.precoVenda,sum(iv.quantidade) as soma, (sum(iv.quantidade)*p.precoVenda) as total from produto p
+                inner join item_venda iv on p.idProduto = iv.id_produto
+                inner join venda v on v.idVenda = iv.id_venda
+                group by p.idProduto order by v.dataVenda,soma DESC limit 0,10";
+
+        $query = $this->getQuery($sql);
+        $this->viewData($query);
+        return;
+
+        $data = new DateTime();
+        echo date('Y-m-d 00:00:00');
+
+
     }
 
     public function actionAddConta() {
@@ -453,8 +485,6 @@ class VendaController extends Controller {
         }
         
         $data = array(
-
-            'venda' => $dataVenda,
             'dataVenda'=>$dataVenda,
         );
 
@@ -477,13 +507,22 @@ class VendaController extends Controller {
     }
 
     public function actionPagamento(){
-        if(isset($_POST['pagamento'])){
-            $valor = $_POST['pagamento']['valor'];
-            $idVenda  = $_POST['pagamento']['idVenda'];
-            $idCliente = $_POST['pagamento']['idCliente'];
 
-            $this->registraPagamento($valor,$idVenda);
+        try{
+            if(isset($_POST['pagamento'])){
+                $valor = $_POST['pagamento']['valor'];
+
+                $idCliente = $_POST['pagamento']['idCliente'];
+                $idVenda = $_POST['pagamento']['idVenda'];
+                $this->registraPagamento($valor,$idVenda);
+
+                $this->setFlashMessage("success","Pagamento realizado com sucesso");
+            }
         }
+        catch(Exception $e){
+            $this->setFlashMessage("error","Erro ao efetuar este pagamento.". $e->getMessage());
+        }
+
 
         $this->redirect(array('cliente/view','id'=>$idCliente));
     }
@@ -509,6 +548,19 @@ class VendaController extends Controller {
             'venda'=>$venda,
             )
         );
+    }
+
+    public function actionCancelarVenda(){
+        if(empty(Yii::app()->session['venda']['itensVenda'])){
+            $this->setFlashMessage("notice","Nenhuma item de venda foi adicionado para a venda.");
+            $this->redirect(array('index'));
+        }
+        else{
+            unset(Yii::app()->session['venda']);
+            $this->setFlashMessage("success",'Venda Cancelada com sucesso');
+            $this->redirect(array('index'));
+        }
+
     }
   
 

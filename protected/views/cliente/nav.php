@@ -11,6 +11,12 @@
                         <button type="button" class="btn btn-primary">Novo Cliente</button>
                     </a>
 
+                    <?php if(isset($model)): ?>
+                        <a href="<?php echo Yii::app()->baseUrl.'/index.php/cliente/historico/'.$model->idCliente; ?>">
+                            <button type="button" class="btn btn-primary">Histórico de compras</button>
+                        </a>
+                    <?php endif;?>
+
                 <?php if(isset($model)): ?>
                         <a href="<?php echo Yii::app()->baseUrl.'/index.php/cliente/update/'.$model->idCliente ?>">
                             <button type="button" class="btn btn-primary">Atualizar</button>

@@ -22,9 +22,8 @@
                 <h2><i class="fa fa-money"></i> Resgistrar pagamento</h2>
 
                 <div class="clearfix">
-                    <form method="post" action="pagamento" class="form-horizontal form-label-left">
-                        <input type="hidden" name="pagamento[idCliente]" value="<?php echo $cliente->idCliente?>">
-                        <input type="hidden" name="pagamento[idVenda]" value="<?php echo $venda['idVenda']; ?>">
+                    <form method="post" action="finalizarVendaAPrazo" class="form-horizontal form-label-left">
+                        <input type="hidden" name="cliente[idCliente]" value="<?php echo $cliente->idCliente?>">
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Pagamento</label>
                             <div class="col-md-3 col-sm-9 col-xs-12">
@@ -36,10 +35,11 @@
 
                         <div class="form-group">
                             <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
-                                <button type="submit" class="btn btn-primary">Cancelar</button>
+                                <a href="index" class="btn btn-danger">Cancelar</a>
                                 <button type="submit" class="btn btn-success">Cadastrar</button>
                             </div>
                         </div>
+
                     </form>
                 </div>
             </div>

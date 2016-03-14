@@ -103,4 +103,15 @@ class Pagamento extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getToalPagamentosDia(){
+		$dataIni = date('Y-m-d 00:00:00');
+		$datafim = date('Y-m-d 23:59:59');
+
+		$sql = "select sum(valor) as total from pagamento p inner join venda v on v.idVenda = p.id_venda inner join
+				conta c on c.id_venda = v.idVenda where p.data_pagamento between '$dataIni' and '$datafim'";
+		$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $query[0]['total'];
+	}
 }
