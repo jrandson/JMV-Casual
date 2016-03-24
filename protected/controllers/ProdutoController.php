@@ -113,11 +113,13 @@ class ProdutoController extends Controller {
         // $this->performAjaxValidation($model);
 
         if (isset($_POST['Produto'])) {
-            $model->attributes = $_POST['Produto'];
-            $model->codigo = $_POST['Produto']['codigo'];
 
-            if($model->verifyCode($_POST['Produto']['codigo'])){
-                throw new Exception("Este código já está cadastrado");
+            $model = Produto::model()->findByAttributes(array('codigo'=>$_POST['Produto']['codigo']));
+
+            $model->attributes = $_POST['Produto'];
+
+            if($model->estoque < 0){
+                $model->estoque = 0;
             }
 
             $model->id_categoria = $_POST['Produto']['id_categoria'];
