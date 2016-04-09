@@ -65,6 +65,13 @@
                                         </ul>
                                         <div class="clearfix"></div>
                                     </div>
+									
+									<div class="x_title">
+                                        <h3>Observacao:</h3>
+										<h4/><?php echo $debito['observacao']; ?></h4>
+										<br/>______</br>
+                                        <div class="clearfix"></div>
+                                    </div>
 
                                     <div class="x_content">
 

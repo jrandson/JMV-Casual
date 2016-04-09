@@ -7,6 +7,7 @@
  * @property integer $idVenda
  * @property integer $id_usuario
  * @property string $dataVenda
+ * @property string $observacao
  *
  * The followings are the available model relations:
  * @property Conta[] $contas

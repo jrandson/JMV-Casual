@@ -2,6 +2,7 @@
     <p>
         Os campos marcados com * são obrigatórios
     </p>
+	 
     <div class="item form-group">
         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nome <span class="required">*</span>
         </label>
@@ -32,7 +33,22 @@
         <div class="col-md-6 col-sm-6 col-xs-12">
             <input type="text" name="venda[pagamento]" placeholder="Valor" class="form-control col-md-7 col-xs-12"/>
         </div>
+		<br/>   
+		
     </div>
+	
+	<div class="item form-group">
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Endereço">Observacao<span class="required"></span>
+        </label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+           <textarea name="venda[observacao]" placeholder="observacao"cols="10" rows="4"></textarea>
+        </div>
+		<br/>   
+		
+    </div>
+	
+	
+	
     <div class="ln_solid"></div>
     <div class="form-group">
         <div class="col-md-6 col-md-offset-3">

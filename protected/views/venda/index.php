@@ -153,14 +153,12 @@
                         </select>
                     </div>
 
-                </div>
+                </div>			
 
                 <div class="form-group">
                     <div class="row no-print">
                         <div class="col-xs-12">
-
-                            <input type="submit" class="btn btn-success pull-right" value="Finalizar compra" />
-                           
+                            <input type="submit" class="btn btn-success pull-right" value="Finalizar compra" />                           
                         </div>
                     </div>
                 </div>
@@ -202,8 +200,8 @@
 
             id = returnedData.idProduto;
 
-            $("#descricao").empty().val(returnedData.descricao);
-            $("#preco").empty().val(Math.round(returnedData.preco, 2));
+            $("#descricao").empty().val(returnedData.descricao);		
+			$("#preco").empty().val(returnedData.preco);
             $("#idProduto").empty().val(returnedData.idProduto);
 
 
@@ -259,10 +257,8 @@
     function trataEnterGetProduto(){
         $(document).keypress(function(e) {
             if(e.which == 13) {
-
                 $("#quantidade").focus();
                 return false;
-
             }
         });
     }

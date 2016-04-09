@@ -54,8 +54,7 @@
                         <h1>Total: R$ <?php echo number_format($total,2,',','.');?></h1>
                         <?php
                         if (!empty($cliente)){
-                        echo 'Cliente não encontrado. Deseja '.'<a href="cliente/create">cadasatrar</a>'.'um novo?';
-
+							echo 'Cliente não encontrado. Deseja '.'<a href="cliente/create">cadasatrar</a>'.'um novo?';
                         }
                         else {
                             ?>
@@ -76,6 +75,8 @@
                     <?php if (isset($cliente)) { ?>
                         <form action="addConta" method="post">
                             <input type="hidden" name="conta[id_cliente]" value="<?php echo $cliente['idCliente']; ?>" />
+							<div class="form-group">						
+							
                             <input type="submit" name="conta[submit]" value="vincular conta">
                         </form>
                     <?php } ?>

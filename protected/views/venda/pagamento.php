@@ -30,6 +30,13 @@
                                 <input type="text" name="venda[pagamento]" class="form-control" placeholder="Pagamento">
                             </div>
                         </div>
+						
+						<div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Observação</label>
+                            <div class="col-md-6 col-sm-9 col-xs-12">
+                                <textarea name="venda[observacao]" placeholder="Observação"  ></textarea>
+                            </div>
+                        </div>					
 
                         <div class="ln_solid"></div>
 

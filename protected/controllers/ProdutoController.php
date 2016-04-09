@@ -113,14 +113,12 @@ class ProdutoController extends Controller {
         // $this->performAjaxValidation($model);
 
         if (isset($_POST['Produto'])) {
-
-            $model = Produto::model()->findByAttributes(array('codigo'=>$_POST['Produto']['codigo']));
-
+			
+			$model = Produto::model()->find('codigo = :cod',array(':cod'=>$_POST['Produto']['codigo']));
+			
             $model->attributes = $_POST['Produto'];
+            //$model->codigo = $_POST['Produto']['codigo'];
 
-            if($model->estoque < 0){
-                $model->estoque = 0;
-            }
 
             $model->id_categoria = $_POST['Produto']['id_categoria'];
                         
@@ -160,6 +158,7 @@ class ProdutoController extends Controller {
         if(isset($_POST['busca'])){
             $param = $_POST['busca'];
             $produtos = $model->buscarProdutos($param);
+			
             $modelCategoria = Categoria::model()->findByPk($param['idCategoria']);
             if(isset($modelCategoria)){
                 $categoriaBuscada = $modelCategoria->descricao;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Loja da dona Zefinha </title>
+        <title>MV Casual</title>
 
         <!-- Bootstrap core CSS -->
 
@@ -51,20 +51,13 @@
 
                             <div>
                                 <input type="submit" class="btn btn-default submit" value="Entrar">
-                                <label>
-                                    <input type="checkbox" name="Login[rememberMe]"> Relembrar-me <br/>
-                                    <a class="reset_pass" href="#">Lost your password?</a>
-                                </label>
-
-                            </div>
+                                                         </div>
                             <div class="clearfix"></div>
                             <div class="separator">
                                 <div class="clearfix"></div>
                                 <br />
                                 <div>
-                                    <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Gentelella Alela!</h1>
-
-                                    <p>©2015 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                                    <h1><i class="fa fa-paw" style="font-size: 26px;"></i> MV Casual</h1>
                                 </div>
                             </div>
                         </form>

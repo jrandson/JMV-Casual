@@ -270,9 +270,10 @@ class VendaController extends Controller {
 
             $transaction = Yii::app()->db->beginTransaction();
 
-            $idVenda = $this->registrarVenda($dataVenda['itensVenda']);
+            $idVenda = $this->registrarVenda($dataVenda['itensVenda']);		
 
             if ($idVenda) {
+				
                 $transaction->commit();
                 unset(Yii::app()->session['venda']);
                 $this->setFlashMessage("success","Venda registrada com sucesso");
@@ -345,7 +346,6 @@ class VendaController extends Controller {
 
         try{
 
-            //$this->viewData($_POST);
             // $this->viewData(Yii::app()->session['venda']);
 
             $transaction = Venda::model()->dbConnection->beginTransaction();
@@ -362,6 +362,15 @@ class VendaController extends Controller {
             if(!$idVenda){
                 throw new Exception("Não foi possível registrar esta venda");
             }
+			else{
+				
+				//$this->viewData($_POST['venda']);
+		
+				
+				$venda = Venda::model()->findByPk($idVenda);
+				$venda->observacao = $_POST['venda']['observacao'];
+				$venda->save();
+			}
 
             if(isset($_POST['cliente']['idCliente'])){
                 $idCliente = $_POST['cliente']['idCliente'];
