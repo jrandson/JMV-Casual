@@ -59,7 +59,17 @@
                                 <div class="x_panel">
 
                                     <div class="x_title">
-                                        <h2><?php echo date_format($dataVenda,'d/m/Y H:i:s');  ?><small><?php echo "cod #".$debito['idVenda']; ?></small> <?php echo "Valor da venda: R$ ".number_format($debito['totalVenda'],2,',','.'); ?> - Total Pago: <?php echo "R$ ".number_format($debito['totalPago'],2,',','.'); ?></h2>
+                                        <h2>
+                                            <?php echo date_format($dataVenda,'d/m/Y H:i:s');  ?>
+                                            <small><?php echo "cod #".$debito['idVenda']; ?>
+                                            </small> <?php echo "Valor da venda: R$ ".number_format($debito['totalVenda'],2,',','.'); ?>
+                                            - Total Pago: <?php echo "R$ ".number_format($debito['totalPago'],2,',','.'); ?>
+                                            <?php
+                                                if($debito['desconto'] > 0){
+                                                    echo " - Desconto: R$ ".number_format($debito['desconto'],2,',','.');
+                                                }
+                                            ?>
+                                        </h2>
                                         <ul class="nav navbar-right panel_toolbox">
                                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                         </ul>

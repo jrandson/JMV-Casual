@@ -8,6 +8,7 @@
  * @property integer $id_usuario
  * @property string $dataVenda
  * @property string $observacao
+ * @property double $desconto
  *
  * The followings are the available model relations:
  * @property Conta[] $contas
@@ -132,8 +133,11 @@ class Venda extends CActiveRecord
 			$itensVenda = Venda::model()->getItensVenda($row['idVenda']);
 			$venda = $row;
 			$venda['itensVenda'] = $itensVenda;
-			$venda['totalVenda'] = $this->getTotalVenda($itensVenda);
+			$totalVenda = $this->getTotalVenda($itensVenda);
 			$venda['totalPago'] = $this->getTotalPago($row['idVenda']);
+			$desconto = $totalVenda*($row['desconto']/100);
+			$venda['totalVenda'] = $totalVenda - $desconto;
+			$venda['desconto'] = $desconto;
 			$historico[] = $venda;
 		}
 
@@ -158,9 +162,14 @@ class Venda extends CActiveRecord
 
 			$sql = "select quantidade*preco as subtotal from item_venda where id_venda = ".$venda['idVenda'];
 			$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+			$totalVenda = 0;
 			foreach($query as $item){
-				$total += $item['subtotal'];
+				$totalVenda += $item['subtotal'];
 			}
+
+			$totalVenda *= (1 - $venda['desconto']/100);
+			$total += $totalVenda;
 
 		}
 
@@ -177,13 +186,18 @@ class Venda extends CActiveRecord
 		$vendas = $query = Yii::app()->db->createCommand($sql)->queryAll();
 
 		$total = 0;
+
 		foreach($vendas as $venda){
 
 			$sql = "select quantidade*preco as subtotal from item_venda where id_venda = ".$venda['idVenda'];
 			$query = Yii::app()->db->createCommand($sql)->queryAll();
+
+			$totalVenda = 0;
 			foreach($query as $row){
 				$total += $row['subtotal'];
 			}
+			$totalVenda *= (1 - $venda['desconto']/100);
+			$total += $totalVenda;
 
 		}
 

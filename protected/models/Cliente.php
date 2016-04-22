@@ -160,10 +160,14 @@ class Cliente extends CActiveRecord
 
 			$totalVenda = Venda::model()->getTotalVenda($query);
 			$totalPago = Venda::model()->getTotalPago(($row['idVenda']));
+			$desconto = $totalVenda*($row['desconto']/100);
+			$totalVenda -= $desconto;
+
 
 			if($totalVenda > $totalPago){
-				$venda['totalVenda'] = Venda::model()->getTotalVenda($query);
-				$venda['totalPago'] = Venda::model()->getTotalPago(($row['idVenda']));
+				$venda['totalVenda'] = $totalVenda;
+				$venda['desconto'] = $desconto;
+				$venda['totalPago'] = $totalPago;
 
 				$debitos[] = $venda;
 			}

@@ -31,7 +31,8 @@ class VendaController extends Controller {
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
                 'actions' => array('create', 'update', 'searchByCod', 'productQuery', 'addItem', 'finalizaVenda', 'teste',
-                    'addConta', 'getCliente','finalizarVendaAPrazo','index','view','finalizarVendaAPrazo','excluirItem','pagamento','cancelarVenda'),
+                    'addConta', 'getCliente','finalizarVendaAPrazo','index','view','finalizarVendaAPrazo','excluirItem',
+                    'pagamento','cancelarVenda','getDesconto'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -187,8 +188,6 @@ class VendaController extends Controller {
 
     public function actionAddItem() {
 
-
-
         $this->viewData($_POST['itemVenda']);
         $item = $_POST['itemVenda'];
 
@@ -246,6 +245,17 @@ class VendaController extends Controller {
         $this->redirect(array('venda/index'));
     }
 
+    public function actionGetDesconto(){
+
+        $desconto = isset($_POST['venda']['desconto'])? $_POST['venda']['desconto']:0;
+
+        $venda = Yii::app()->session['venda'];
+        $venda['desconto'] = $desconto;
+        Yii::app()->session['venda'] = $venda;
+
+        $this->redirect(array('index'));
+    }
+
     public function actionFinalizaVenda() {
 
         if(empty(Yii::app()->session['venda']['itensVenda'])){
@@ -292,6 +302,7 @@ class VendaController extends Controller {
             $model = new Venda();
 
             $model->id_usuario = Yii::app()->user->id;
+            $model->desconto = isset(Yii::app()->session['venda']['desconto']) ? Yii::app()->session['venda']['desconto'] : 0;
 
             if(!$model->save()){
                 throw new Exception("Erro ao registrar esta venda");                
@@ -369,6 +380,7 @@ class VendaController extends Controller {
 				
 				$venda = Venda::model()->findByPk($idVenda);
 				$venda->observacao = $_POST['venda']['observacao'];
+                $venda->desconto = isset(Yii::app()->session['venda']['desconto']) ? Yii::app()->session['venda']['desconto'] : 0;
 				$venda->save();
 			}
 

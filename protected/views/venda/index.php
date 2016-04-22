@@ -36,7 +36,7 @@
                     <div class="x_content">
                         <form id="searchProduct" method="post" action="addItem" >
 
-                            <input type="hidden" id="idProduto" name="itemVenda[idProduto]" value=""/>
+                                <input type="hidden" id="idProduto" name="itemVenda[idProduto]" value=""/>
                             <div class="row">
                                 <div class="col-md-2 col-sm-12 col-xs-12 form-group">
 
@@ -75,26 +75,50 @@
                                 <div class="col-md-12 col-sm-4 col-xs-4 form-group">
                                     <button type="button" id="Cancelar" class="btn btn-small" onclick="limparCampos();" >Limpar</button>
                                 </div>
-                                
-                                <div class="title_right">
-                                    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+
+                            </div>
+                        </form>
+
+                        <form action="getDesconto" method="post">
+                            <div class="row">
+                                <div class="title_left">
+                                    <div class="col-md-4 col-sm-5 col-xs-12 form-group">
                                         <div class="input-group">
-                                            <?php
-                                            
-                                            $venda = (isset(Yii::app()->session['venda'])) ? Yii::app()->session['venda'] : array();
-                                            $total = 0;
-                                            
-                                            foreach ($venda['itensVenda'] as $itemVenda) {
-                                                $total += $itemVenda['quantidade'] * $itemVenda['preco'];
-                                            }
-                                            ?>
-                                            <h1><small>Total:</small> R$ <?php echo number_format($total, 2, ',', '.'); ?></h1>
+                                            <input id="desconto" type="text" name="venda[desconto]"  placeholder="Desconto %" class="form-control">
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="title_right">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                                        <div class="input-group">
+                                            <?php
+
+                                            $venda = (isset(Yii::app()->session['venda'])) ? Yii::app()->session['venda'] : array();
+                                            $desconto = (isset(Yii::app()->session['venda']['desconto'])) ? Yii::app()->session['venda']['desconto'] : 0;
+                                            $total = 0;
+
+                                            foreach ($venda['itensVenda'] as $itemVenda) {
+                                                $total += $itemVenda['quantidade'] * $itemVenda['preco'];
+                                            }
+
+                                            $totalDescontado = $total*(1 - $desconto/100);
+
+                                            ?>
+                                            <?php if($desconto != 0):?>
+                                                <h1>R$ <?php echo number_format($total, 2, ',', '.'); ?></h1>
+                                                <h3><small>Desc.:</small> R$ <?php echo number_format($total*$desconto/100, 2, ',', '.'); ?></h3>
+
+                                            <?php endif; ?>
+                                            <h1><small>Total:</small> R$ <?php echo number_format($totalDescontado, 2, ',', '.'); ?></h1>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </form>
+
+
+
 
                     </div>
 
@@ -120,7 +144,7 @@
                                         ?>
                                         <tr>
                                             <td><?php echo $itemVenda['quantidade']; ?></td>
-                                            <td><?php //echo $itemVenda['produto'];     ?></td>
+                                            <td><?php //echo $itemVenda['descricao'];     ?></td>
                                             <td><?php //echo $itemVenda['codigo'];     ?></td>
                                             <td><?php echo $itemVenda['descricao']; ?></td>
                                             <td>R$ <?php echo number_format($subtotal, 2, ',', '.'); ?></td>
@@ -216,6 +240,7 @@
 
         $("#subTotal").val(subTotal);
     }
+
 
     function queryProduct() {
         
